@@ -8,6 +8,6 @@ $(document).ready(function(){
 	});
 
 	// Count Animated 
-	$('.number').animateNumbers(253582500, true, 900000);
+	$('.number').animateNumbers(244565300, true, 900000);
 });
 
