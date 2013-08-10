@@ -186,6 +186,44 @@ html.idea {
 html.idea body {
   color: #fff;
 }
+html.idea i {
+  font-style: normal;
+  font-weight: 400;
+  color: #f9ed32;
+}
+html.idea .text {
+  font-size: 2.4em;
+  text-align: center;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+html.idea .text .bigger {
+  font-size: 1.5em;
+}
+html.idea .text .sticker {
+  background: #f9ed32;
+  padding: 10px 20px;
+  display: inline-block;
+  color: #666;
+  margin: 10px 0;
+}
+html.idea .idea-container {
+  max-width: 850px;
+  margin: 0 auto;
+  *zoom: 1;
+}
+html.idea .idea-container:before,
+html.idea .idea-container:after {
+  content: "";
+  display: table;
+}
+html.idea .idea-container:after {
+  clear: both;
+}
+@media all and (max-width: 767px) {
+  html.idea .idea-container {
+    padding: 0 10px;
+  }
+}
 body {
   font-family: lexia, georgia, serif;
   -webkit-font-smoothing: antialiased;
