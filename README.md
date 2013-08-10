@@ -1,4 +1,4 @@
-dollars4scholars
+# Dollars 4 Scholars
 ================
 
-Front-end dev for Startup Weekend TO for Education
+Get scholarships.

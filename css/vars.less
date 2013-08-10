@@ -1,0 +1,26 @@
+// Media Queries
+@mobile: ~"all and (max-width: 767px)";
+@tablet: ~"all and (min-width: 768px) and (max-width: 979px)";
+ 
+// Semantic.gs settings
+@import 'grid';
+
+@total-width: 100%;
+ 
+// Box Sizing
+.box-sizing(@sizing: border-box) {
+  -ms-box-sizing: @sizing;
+  -moz-box-sizing: @sizing;
+  -webkit-box-sizing: @sizing;
+  box-sizing: @sizing;
+}
+ 
+// Accessible Hiding
+.hide-accessibly() {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
+
+// Colours
+@lightgrey: #efefef;
