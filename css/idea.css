@@ -579,6 +579,15 @@ html.idea .scholarships .cta img {
   display: block;
   margin: -13px 0 0 -5px;
 }
+html.idea a.cta-signup {
+  margin: 30px 0;
+  padding: 25px 40px;
+  border-radius: 10px;
+  font-size: 40px;
+  text-transform: uppercase;
+  background: #f9ed32;
+  color: #333;
+}
 body {
   font-family: lexia, georgia, serif;
   -webkit-font-smoothing: antialiased;
