@@ -4,10 +4,24 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 @import 'vars';
 @import '../js/fancybox/fancybox.css';
 
+// Idea page
+html.idea {
+	background: @blue;
+	body {
+		color: #fff;
+	}
+}
+
+// typography
 body {
-	font-family: 'helvetica neue', helvetica, arial, sans-serif;
+	font-family: lexia, georgia, serif;
 	-webkit-font-smoothing: antialiased;
 	color: #333;
+	font-weight: 300;
+	font-size: 1.2em;
+}
+h1, h2, h3, h4 {
+	font-weight: 800;
 }
 
 // Forms
@@ -28,7 +42,7 @@ fieldset {
 	padding: 0;
 }
 label {
-	font-weight: 700;
+	font-weight: 800;
 	padding: 0.2em 0;
 	display: inline-block;
 }
@@ -65,7 +79,6 @@ label {
 	height: 0;
 }
 
-
 // UI 
 .btn {
 	background: deeppink;
@@ -73,7 +86,7 @@ label {
 	text-decoration: none;
 	border: 0;
 	color: #fff;
-	font-weight: 700;
+	font-weight: 800;
 	padding: 0.3em 0.8em;
 	border-radius: 4px;
 	margin-top: 10px;
@@ -83,12 +96,16 @@ label {
 	}
 }
 
-// Tabbed section
-.tabs-nav {
+// Tabs Module
+.tabs-module {
 	.column(6);
-	margin: 1em 0 0 0;
+	margin-top: 10px;
+	@media @mobile {
+		.column(12);
+	}
+}
+.tabs-nav {
 	position: relative;
-	z-index: 100;
 	ul {
 		margin: 0;
 		padding: 0;
@@ -110,32 +127,20 @@ label {
 		}
 	}
 }
-a.addCourse {
-	padding: 5px;
-	background: darkturquoise;
-	color: #000;
-	display: inline-block;
-	text-decoration: none;
-	position: absolute;
-	top: 0;
-	right: 0;
-}
-.tab-content {
-	.row();
+.tabs-section {
+	clear: both;
+	position: relative;
 }
 .table-section {
 	background: #f7f7f7;
+	color: #000;
 	border: 1px solid @lightgrey;
 	border-top: 0;
 	border-top: 0;
-	padding: 0 10px;
+	padding: 10px;
 	clear: both;
-	.column(6);
-	height: 300px;
+	height: 360px;
 	.box-sizing();
-	@media @mobile {
-		.column(12);
-	}
 }
 table {
 	width: 100%;
@@ -149,7 +154,47 @@ table {
 		padding: 6px;
 		border: 1px solid darken(@lightgrey,10%);
 	}
+	input {
+		padding: 0;
+		border: 0;
+		&:focus {
+			box-shadow: none;
+			color: dodgerblue;
+		}
+	}
 }
+a.addAssignment {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+// GPA
+.gpa {
+	.column(6);
+	.current {
+		font-size: 3em;
+	}
+	@media @mobile {
+		.column(12);
+	}
+}
+a.addCourse {
+	padding: 5px;
+	background: darkturquoise;
+	color: #000;
+	display: inline-block;
+	text-decoration: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+
+// Scholarships
+.scholarships {
+	.column(12);
+}
+
 
 // Top banner, nav
 .banner {

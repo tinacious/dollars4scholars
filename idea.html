@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="idea">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,104 +8,136 @@
 	</head>
 	<body>
 		<div class="container">
-			<!-- tabs navigation -->
-			<div class="tabs-nav">
+			
+			<div class="tabs-module">
+				<!-- tabs navigation -->
+				<div class="tabs-nav">
+					<ul>
+						<li>
+							<a href="#class1">Law 101</a>
+						</li>
+						<li>
+							<a href="#class2">Law 102</a>
+						</li>
+					</ul>
+					<a class="addCourse" href="#modalAddCourse">Add a Course</a>
+				</div>
+				
+				<!-- tabs -->
+				<div class="tabs-section">
+					<div id="class1" class="tab-content">
+						<div class="table-section">
+							<table>
+								<thead>
+									<tr>
+										<th>Assignment</th>
+										<th>Grade</th>
+										<th>% of final grade</th>
+									</tr>
+									<tbody>
+										<tr>
+											<td>
+												<input type="text" value="Assignment 1">
+											</td>
+											<td><input type="number" value="50"></td>
+											<td><input type="number" value="0.2"></td>
+										</tr>
+										<tr>
+											<td><input type="text" value="Assignment 2"></td>
+											<td><input type="number" value="60"></td>
+											<td><input type="number" value="0.5"></td>
+										</tr>
+										<tr>
+											<td><input type="text" value="Mid-term Exam"></td>
+											<td><input type="number" value="70"></td>
+											<td><input type="number" value="10"></td>
+										</tr>
+										<tr>
+											<td><input type="text" value="Final Exam"></td>
+											<td><input type="number" value="70"></td>
+											<td><input type="number" value="20"></td>
+										</tr>
+									</tbody>
+								</thead>
+							</table>
+							<a href="#" class="addAssignment btn">Add an Assignment</a>
+						</div> <!-- /.table-section -->
+
+					</div> <!-- /#term1 .tab-content -->
+
+					<div id="class2" class="tab-content">
+						
+						<div class="table-section">
+							<table>
+								<thead>
+									<tr>
+										<th>Assignment</th>
+										<th>Grade</th>
+										<th>% of final grade</th>
+									</tr>
+									<tbody>
+										<tr>
+											<td>
+												<input type="text" value="Essay (6 pages)">
+											</td>
+											<td><input type="number" value="50"></td>
+											<td><input type="number" value="10"></td>
+										</tr>
+										<tr>
+											<td><input type="text" value="Test 1"></td>
+											<td><input type="number" value="90"></td>
+											<td><input type="number" value="2"></td>
+										</tr>
+									</tbody>
+								</thead>
+							</table>
+							<a href="#" class="addAssignment btn">Add an Assignment</a>
+						</div>
+					</div> <!-- /#term1 .tab-content -->
+
+				</div> <!-- /.tabs-section -->
+
+			</div> <!-- /.tabs-module -->
+
+			<div class="gpa">
+				<p class="current">
+					85%
+				</p>
 				<ul>
 					<li>
-						<a href="#class1">Law 101</a>
+						<span>Cumulative GPA:</span> 83%
 					</li>
 					<li>
-						<a href="#class2">Law 102</a>
+						<span>Term GPA:</span> 88%
 					</li>
 				</ul>
-				<a class="addCourse" href="#modalAddCourse">Add a Course</a>
 			</div>
 
-			
-
-			<div id="modalAddCourse">
-				<h1>Add a Course!</h1>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, voluptatibus enim eligendi commodi fugit error fuga itaque. Dicta, soluta temporibus sunt asperiores a corrupti sequi ab placeat dolores deserunt? Soluta.
-				</p>
+			<!-- Scholarships -->
+			<div class="scholarships">
+				<h2>Scholarships</h2>
+				<ul>
+					<li><span>$1,000</span> 4-H Scholarships</li>
+					<li><span>$1,400</span> 9Kids Who Care</li>
+					<li><span>$1800</span> Adams State College scholarships</li>
+				</ul>
 			</div>
-			
-
-			<!-- tabs -->
-			<div class="tabs-section">
-				<div id="class1" class="tab-content">
-					
-					<div class="table-section">
-						<h2>Law 101</h2>
-						<table>
-							<thead>
-								<tr>
-									<th>Assignment</th>
-									<th>Grade</th>
-									<th>% of final grade</th>
-								</tr>
-								<tbody>
-									<tr>
-										<td>Assignment 1</td>
-										<td>50</td>
-										<td>0.2</td>
-									</tr>
-									<tr>
-										<td>Assignment 2</td>
-										<td>60</td>
-										<td>0.5</td>
-									</tr>
-									<tr>
-										<td>Mid-term Exam</td>
-										<td>70</td>
-										<td>10</td>
-									</tr>
-									<tr>
-										<td>Final Exam</td>
-										<td>70</td>
-										<td>20</td>
-									</tr>
-								</tbody>
-							</thead>
-						</table>
-					</div>
-				</div> <!-- /#term1 .tab-content -->
-
-				<div id="class2" class="tab-content">
-					
-					<div class="table-section">
-						<h2>Law 102</h2>
-						<table>
-							<thead>
-								<tr>
-									<th>Assignment</th>
-									<th>Grade</th>
-									<th>% of final grade</th>
-								</tr>
-								<tbody>
-									<tr>
-										<td>Essay (6 pages)</td>
-										<td>50</td>
-										<td>10</td>
-									</tr>
-									<tr>
-										<td>Test</td>
-										<td>90</td>
-										<td>0.2</td>
-									</tr>
-									<tr>
-										<td>Final Exam</td>
-										<td>--</td>
-										<td>--</td>
-									</tr>
-								</tbody>
-							</thead>
-						</table>
-					</div>
-				</div> <!-- /#term1 .tab-content -->
 				
 			</div> <!-- /.container -->
 		</div>
+
+		<!-- Inline Modal Windows -->
+		<div id="modalAddCourse">
+			<h1>Add a Course!</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, voluptatibus enim eligendi commodi fugit error fuga itaque. Dicta, soluta temporibus sunt asperiores a corrupti sequi ab placeat dolores deserunt? Soluta.
+			</p>
+		</div>
+
+
+
+		<script type="text/javascript" src="//use.typekit.net/xcw2vjl.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 		<!-- jQuery -->
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 		<!-- Responsive Video plugin by Tinacious Design -->

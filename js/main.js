@@ -29,5 +29,13 @@ $(document).ready(function(){
 			maxWidth: 960
 		});
 
+		// Add an Assignment
+		$('.addAssignment').click(function(){
+			var assignmentTable = $(this).siblings('table');
+			assignmentTable.find('tbody').append('<tr><td><input type="text"></td><td><input type="number"></td><td><input type="number"></td></tr>');
+			assignmentTable.find('tr:last input:first').focus();
+
+		});
+
 });
 

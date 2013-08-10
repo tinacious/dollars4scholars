@@ -379,10 +379,24 @@ body:after {
 body:after {
   clear: both;
 }
+html.idea {
+  background: #0bb1e6;
+}
+html.idea body {
+  color: #fff;
+}
 body {
-  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  font-family: lexia, georgia, serif;
   -webkit-font-smoothing: antialiased;
   color: #333;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 800;
 }
 input,
 textarea {
@@ -410,7 +424,7 @@ fieldset {
   padding: 0;
 }
 label {
-  font-weight: 700;
+  font-weight: 800;
   padding: 0.2em 0;
   display: inline-block;
 }
@@ -477,7 +491,7 @@ label {
   text-decoration: none;
   border: 0;
   color: #fff;
-  font-weight: 700;
+  font-weight: 800;
   padding: 0.3em 0.8em;
   border-radius: 4px;
   margin-top: 10px;
@@ -486,18 +500,31 @@ label {
   background: dodgerblue;
   cursor: pointer;
 }
+.tabs-module {
+  display: inline;
+  float: left;
+  width: 47.91666666666667%;
+  margin: 0 1.0416666666666665%;
+  display: inline;
+  float: left;
+  width: 47.91666666666667%;
+  margin: 0 1.0416666666666665%;
+  margin-top: 10px;
+}
+@media all and (max-width: 767px) {
+  .tabs-module {
+    display: inline;
+    float: left;
+    width: 97.91666666666666%;
+    margin: 0 1.0416666666666665%;
+    display: inline;
+    float: left;
+    width: 97.91666666666666%;
+    margin: 0 1.0416666666666665%;
+  }
+}
 .tabs-nav {
-  display: inline;
-  float: left;
-  width: 47.91666666666667%;
-  margin: 0 1.0416666666666665%;
-  display: inline;
-  float: left;
-  width: 47.91666666666667%;
-  margin: 0 1.0416666666666665%;
-  margin: 1em 0 0 0;
   position: relative;
-  z-index: 100;
 }
 .tabs-nav ul {
   margin: 0;
@@ -519,76 +546,19 @@ label {
 .tabs-nav ul a.active-tab {
   background: #f7f7f7;
 }
-a.addCourse {
-  padding: 5px;
-  background: darkturquoise;
-  color: #000;
-  display: inline-block;
-  text-decoration: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.tab-content {
-  display: block;
-  width: 102.08333333333333%;
-  margin: 0 -1.0416666666666665%;
-  *zoom: 1;
-  *zoom: 1;
-  display: block;
-  width: 102.08333333333333%;
-  margin: 0 -1.0416666666666665%;
-  *zoom: 1;
-  *zoom: 1;
-}
-.tab-content:before,
-.tab-content:after {
-  content: "";
-  display: table;
-}
-.tab-content:after {
+.tabs-section {
   clear: both;
-}
-.tab-content:before,
-.tab-content:after {
-  content: "";
-  display: table;
-}
-.tab-content:after {
-  clear: both;
-}
-.tab-content:before,
-.tab-content:after {
-  content: "";
-  display: table;
-}
-.tab-content:after {
-  clear: both;
-}
-.tab-content:before,
-.tab-content:after {
-  content: "";
-  display: table;
-}
-.tab-content:after {
-  clear: both;
+  position: relative;
 }
 .table-section {
   background: #f7f7f7;
+  color: #000;
   border: 1px solid #efefef;
   border-top: 0;
   border-top: 0;
-  padding: 0 10px;
+  padding: 10px;
   clear: both;
-  display: inline;
-  float: left;
-  width: 47.91666666666667%;
-  margin: 0 1.0416666666666665%;
-  display: inline;
-  float: left;
-  width: 47.91666666666667%;
-  margin: 0 1.0416666666666665%;
-  height: 300px;
+  height: 360px;
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -597,18 +567,6 @@ a.addCourse {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-@media all and (max-width: 767px) {
-  .table-section {
-    display: inline;
-    float: left;
-    width: 97.91666666666666%;
-    margin: 0 1.0416666666666665%;
-    display: inline;
-    float: left;
-    width: 97.91666666666666%;
-    margin: 0 1.0416666666666665%;
-  }
 }
 table {
   width: 100%;
@@ -623,6 +581,64 @@ table td,
 table th {
   padding: 6px;
   border: 1px solid #d6d6d6;
+}
+table input {
+  padding: 0;
+  border: 0;
+}
+table input:focus {
+  box-shadow: none;
+  color: dodgerblue;
+}
+a.addAssignment {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.gpa {
+  display: inline;
+  float: left;
+  width: 47.91666666666667%;
+  margin: 0 1.0416666666666665%;
+  display: inline;
+  float: left;
+  width: 47.91666666666667%;
+  margin: 0 1.0416666666666665%;
+}
+.gpa .current {
+  font-size: 3em;
+}
+@media all and (max-width: 767px) {
+  .gpa {
+    display: inline;
+    float: left;
+    width: 97.91666666666666%;
+    margin: 0 1.0416666666666665%;
+    display: inline;
+    float: left;
+    width: 97.91666666666666%;
+    margin: 0 1.0416666666666665%;
+  }
+}
+a.addCourse {
+  padding: 5px;
+  background: darkturquoise;
+  color: #000;
+  display: inline-block;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.scholarships {
+  display: inline;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  display: inline;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
 }
 .banner {
   background: grey;
