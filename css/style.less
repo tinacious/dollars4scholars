@@ -11,9 +11,24 @@ body {
 // Forms
 input, textarea {
 	-webkit-font-smoothing: antialiased;
+	display: block;
+	width: 100%;
+	border: 1px solid darken(@lightgrey,15%);
+	padding: 5px;
+	.box-sizing(border-box);
+	&:focus {
+		outline: none;
+		box-shadow: 0 0 10px fade(deeppink,50%);
+	}
+}
+fieldset {
+	border: 0;
+	padding: 0;
 }
 label {
 	font-weight: 700;
+	padding: 0.2em 0;
+	display: inline-block;
 }
 
 // Layout
@@ -28,7 +43,10 @@ label {
 .section {
 	padding: 2em 0;
 }
-
+.buffered {
+	.column(10);
+	.push(1);
+}
 
 
 // Responsive Video Plugin
@@ -56,6 +74,11 @@ label {
 	font-weight: 700;
 	padding: 0.3em 0.8em;
 	border-radius: 4px;
+	margin-top: 10px;
+	&:hover {
+		background: dodgerblue;
+		cursor: pointer;
+	}
 }
 
 // Top banner, nav
@@ -83,10 +106,27 @@ label {
 	}
 }
 
-// Sign-up form
+// Sign-up area
+.signup-area {
+	.row();
+}
 .signup {
-	.column(6);
+	.column(5);
 	background: @lightgrey;
+	fieldset {
+		.column(10);
+		.push(1);
+	}
+}
+img.appstore {
+	width: 200px;
+	margin: 1em 0;
+}
+// RWD 
+.signup {
+	@media @mobile {
+		.column(12);
+	}
 }
 
 // Clients

@@ -31,7 +31,7 @@
 							<li>Point</li>
 						</ul>
 						<!-- Click focuses on the first field in the signup form -->
-						<a class="btn">Sign Up Now</a>
+						<a class="btn goSignUp">Sign Up Now</a>
 					</div> <!-- /.description -->
 					<div class="video"></div>
 				</div>
@@ -39,25 +39,57 @@
 		</div> <!-- /.promo -->
 		
 		<div class="container">
-			
-			<div class="signup">
-				<h2>Sign Up</h2>
+			<div class="more-info section">
+				<div class="signup-area">
+					<div class="description">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid facilis ullam maiores nostrum quidem blanditiis illum. Sapiente, enim, modi error ex laborum at doloremque vero accusantium alias incidunt veniam quo qui ipsum hic aspernatur voluptates dolor soluta perspiciatis quisquam maiores.
+						</p>
 
-				<label>E-Mail</label>
-				<input type="email">
+						<!-- Live Count goes here -->
+						<h3>Money paid out through Dollars 4 Scholars</h3>
+						<div class="count">
+							$<span class="number">243,525,300</span>
+						</div>
 
-				<label>Name</label>
-				<input type="text">
-
-				<label>Password</label>
-				<input type="password">
-
-				<p>
-					Or login with Facebook or LinkedIn
-				</p>
-			</div> <!-- /.signup -->
+						<h3>Scholarships pushed to your phone!</h3>
+						<p>
+							Get scholarship updates pushed right to your Android phone!
+						</p>
+						<a href="#"><img src="img/app.png" class="appstore" alt="Get it in the Google Play store"></a>
 
 
+						<!-- Link to the AppStore -->
+					</div>
+					
+					<div class="signup">
+						<div class="buffered">
+							<h2>Sign Up</h2>
+						</div>
+						
+						<fieldset>
+							<form action="">
+								<label>E-Mail</label>
+								<input type="email" class="email-address">
+
+								<label>Name</label>
+								<input type="text">
+
+								<label>Password</label>
+								<input type="password">
+
+								<input type="submit" class="btn" value="Sign Up Now!">
+							</form>
+						</fieldset>
+
+						<div class="buffered">
+							<p>
+								Or login with Facebook or LinkedIn
+							</p>
+						</div>
+					</div> <!-- /.signup -->
+				</div> <!-- /.signup-area -->
+			</div> <!-- /.more-info -->
 		</div> <!-- /.container -->
 
 		<!-- Client section displays logos of companies currently using the service -->
@@ -112,10 +144,6 @@
 			</div> <!-- /.container -->
 
 
-			<!-- Live Count goes here -->
-
-
-			<!-- Link to the AppStore -->
 
 		</div>
 		
