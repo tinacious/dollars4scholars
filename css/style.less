@@ -165,7 +165,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	color: #333;
 	font-weight: 300;
-	font-size: 1.2em;
+	font-size: 1.4em;
 }
 h1, h2, h3, h4 {
 	font-weight: 800;
@@ -212,7 +212,6 @@ label {
 	.column(10);
 	.push(1);
 }
-
 
 // Responsive Video Plugin
 .responsive-video object, .responsive-video iframe {
@@ -315,6 +314,7 @@ table {
 		border: 0;
 		&:focus {
 			box-shadow: none;
+			outline: 0;
 			color: dodgerblue;
 		}
 	}
@@ -390,16 +390,14 @@ a.addCourse {
 	}
 }
 
-
 // Scholarships
 .scholarships {
 	.column(12);
 }
 
-
 // Top banner, nav
 .banner {
-	background: grey;
+	background: #fff;
 }
 
 // Promo section
@@ -407,7 +405,7 @@ a.addCourse {
 	.row();
 }
 .promo {
-	background: lightblue;
+	background: @lightgrey;
 }
 .description {
 	.column(7);
@@ -423,12 +421,17 @@ a.addCourse {
 }
 
 // Sign-up area
+.more-info {
+	background: @blue;
+	color: #fff;
+}
 .signup-area {
 	.row();
 }
 .signup {
 	.column(5);
 	background: @lightgrey;
+	color: #333;
 	fieldset {
 		.column(10);
 		.push(1);
@@ -451,7 +454,7 @@ img.appstore {
 
 // Clients
 .clients {
-	background: royalblue;
+	background: @lightgrey;
 }
 .client-logos {
 	.row();

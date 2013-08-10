@@ -593,7 +593,7 @@ body {
   -webkit-font-smoothing: antialiased;
   color: #333;
   font-weight: 300;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 h1,
 h2,
@@ -817,6 +817,7 @@ table input {
 }
 table input:focus {
   box-shadow: none;
+  outline: 0;
   color: dodgerblue;
 }
 a.addAssignment {
@@ -1008,7 +1009,7 @@ a.addCourse:hover {
   margin: 0 1.0416666666666665%;
 }
 .banner {
-  background: grey;
+  background: #fff;
 }
 .promo-content {
   display: block;
@@ -1055,7 +1056,7 @@ a.addCourse:hover {
   clear: both;
 }
 .promo {
-  background: lightblue;
+  background: #efefef;
 }
 .description {
   display: inline;
@@ -1089,6 +1090,10 @@ a.addCourse:hover {
     width: 97.91666666666666%;
     margin: 0 1.0416666666666665%;
   }
+}
+.more-info {
+  background: #0bb1e6;
+  color: #fff;
 }
 .signup-area {
   display: block;
@@ -1144,6 +1149,7 @@ a.addCourse:hover {
   width: 39.58333333333333%;
   margin: 0 1.0416666666666665%;
   background: #efefef;
+  color: #333;
 }
 .signup fieldset {
   display: inline;
@@ -1177,7 +1183,7 @@ img.appstore {
   }
 }
 .clients {
-  background: royalblue;
+  background: #efefef;
 }
 .client-logos {
   display: block;
