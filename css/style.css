@@ -182,6 +182,7 @@ body:after {
 body {
   font-family: 'helvetica neue', helvetica, arial, sans-serif;
   -webkit-font-smoothing: antialiased;
+  color: #333;
 }
 input,
 textarea {
@@ -335,6 +336,9 @@ label {
   width: 81.25%;
   margin: 0 1.0416666666666665%;
   margin-left: 9.374999999999998%;
+}
+.count {
+  font-size: 3em;
 }
 img.appstore {
   width: 200px;

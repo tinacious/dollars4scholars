@@ -49,7 +49,7 @@
 						<!-- Live Count goes here -->
 						<h3>Money paid out through Dollars 4 Scholars</h3>
 						<div class="count">
-							$<span class="number">243,525,300</span>
+							$<span class="number">243525300</span>
 						</div>
 
 						<h3>Scholarships pushed to your phone!</h3>
@@ -151,6 +151,8 @@
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 		<!-- Responsive Video plugin by Tinacious Design -->
 		<script src="js/tinaciousFluidVid.min.js"></script>
+		
+		<script src="js/plugins.js"></script>
 		<!-- jQuery scripts -->
 		<script src="js/main.js"></script>
 	</body>
