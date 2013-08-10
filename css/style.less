@@ -94,12 +94,22 @@ html.idea {
 	// Scholarships
 	.scholarships {
 		.scholarship {
+			margin-bottom: 25px;
+			box-shadow: 5px 5px 10px fade(#000,40%);
 			.clearfix();
+			.logo {
+				width: 140px;
+				height: 130px;
+				padding: 20px 10px;
+				float: left;
+				.box-sizing();
+				background: #fff;
+			}
 			img {
 				float: left;
 			}
-			padding: 15px;
-			font-size: 28px;
+			padding: 20px;
+			font-size: 30px;
 			.box-sizing();
 			background: @lightgrey;
 			p {
@@ -107,6 +117,7 @@ html.idea {
 			}
 			.info {
 				.column(8);
+				padding-left: 10px;
 			}
 			
 		}
@@ -132,7 +143,7 @@ html.idea {
 			img {
 				clear: both;
 				display: block;
-				margin-top: -13px;
+				margin: -13px 0 0 -5px;
 			}
 		}
 	}

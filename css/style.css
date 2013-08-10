@@ -282,9 +282,11 @@ html.idea .social li {
   padding: 20px;
 }
 html.idea .scholarships .scholarship {
+  margin-bottom: 25px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
   *zoom: 1;
-  padding: 15px;
-  font-size: 28px;
+  padding: 20px;
+  font-size: 30px;
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -299,6 +301,17 @@ html.idea .scholarships .scholarship:after {
 html.idea .scholarships .scholarship:after {
   clear: both;
 }
+html.idea .scholarships .scholarship .logo {
+  width: 140px;
+  height: 130px;
+  padding: 20px 10px;
+  float: left;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #fff;
+}
 html.idea .scholarships .scholarship img {
   float: left;
 }
@@ -310,6 +323,7 @@ html.idea .scholarships .scholarship .info {
   float: left;
   width: 64.58333333333334%;
   margin: 0 1.0416666666666665%;
+  padding-left: 10px;
 }
 html.idea .scholarships .cta {
   width: 80px;
@@ -334,7 +348,7 @@ html.idea .scholarships .cta a {
 html.idea .scholarships .cta img {
   clear: both;
   display: block;
-  margin-top: -13px;
+  margin: -13px 0 0 -5px;
 }
 body {
   font-family: lexia, georgia, serif;
