@@ -3,10 +3,15 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 
 @import 'vars';
 @import '../js/fancybox/fancybox.css';
+@import 'jqueryui.css';
 
 // Idea page
 html.idea {
 	background: @blue;
+	.white {
+		background: #fff;
+		color: #333;
+	}
 	body {
 		color: #fff;
 	}
@@ -15,27 +20,120 @@ html.idea {
 		font-weight: 400;
 		color: @yellow;
 	}
+	img {
+		display: block;
+	}
 	.text {
-		font-size: 2.4em;
+		clear: both;
+		font-size: 45px;
 		text-align: center;
 		text-shadow: 5px 5px 10px fade(#000,40%);
 		.bigger {
-			font-size: 1.5em;
+			font-size: 55px;
 		}
 		.sticker {
 			background: @yellow;
 			padding: 10px 20px;
 			display: inline-block;
 			color: #666;
-			margin: 10px 0;
+			
 		}
 	}
-	.idea-container {
-		max-width: 850px;
+	.student {
+		margin: 20px auto;
+	}
+	.line01, .line02, .line03, .yep, .teach-me {
+		position: absolute;
+	}
+	.line01 {
+		top: 176px;
+		left: 0;
+	}
+	.line02 {
+		top: 70px;
+		right: 80px;
+	}
+	.line03 {
+		top: 530px;
+		right: 30px;
+	}
+	.line04 {
 		margin: 0 auto;
+	}
+	.yep {
+		top: 125px;
+		right: 240px;
+		font-size: 30px;
+	}
+	.teach-me {
+		top: 570px;
+		right: 110px;
+		font-size: 30px;
+	}
+	.idea-container {
+		width: 850px;
+		margin: 0 auto;
+		position: relative;
 		.clearfix();
 		@media @mobile {
 			padding: 0 10px;
+		}
+	}
+	.social {
+		text-align: center;
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+		li {
+			display: inline-block;
+			padding: 20px;
+		}
+	}
+	// Scholarships
+	.scholarships {
+		.scholarship {
+			.clearfix();
+			img {
+				float: left;
+			}
+			padding: 15px;
+			font-size: 28px;
+			.box-sizing();
+			background: @lightgrey;
+			p {
+				margin: 3px 0;
+			}
+			.info {
+				.column(8);
+			}
+			
+		}
+		.cta {
+			width: 80px;
+			float: right;
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			border-left: 1px solid #999;
+			li {
+				display: block;
+				clear: both;
+				&:last-child {
+					border-top: 1px solid #999;
+				}
+			}
+			a {
+				display: block;
+				padding: 15px 30px 15px 15px;
+				width: 100%;
+			}
+			img {
+				clear: both;
+				display: block;
+				margin-top: -13px;
+			}
 		}
 	}
 }
@@ -61,8 +159,8 @@ input, textarea {
 	padding: 5px;
 	.box-sizing(border-box);
 	&:focus {
-		outline: none;
-		box-shadow: 0 0 10px fade(deeppink,50%);
+		outline: 1px solid @blue;
+		// box-shadow: 0 0 10px fade(deeppink,50%);
 	}
 }
 fieldset {
@@ -86,6 +184,8 @@ label {
 }
 .section {
 	padding: 2em 0;
+	clear: both;
+	.clearfix();
 }
 .buffered {
 	.column(10);
@@ -109,24 +209,28 @@ label {
 
 // UI 
 .btn {
-	background: deeppink;
+	background: @blue;
 	display: inline-block;
 	text-decoration: none;
 	border: 0;
 	color: #fff;
 	font-weight: 800;
 	padding: 0.3em 0.8em;
-	border-radius: 4px;
 	margin-top: 10px;
 	&:hover {
-		background: dodgerblue;
+		background: @yellow;
+		color: #333;
 		cursor: pointer;
 	}
+}
+.ui-datepicker {
+	font-size: 16px;
 }
 
 // Tabs Module
 .tabs-module {
-	.column(6);
+	.column(10);
+	.push(1);
 	margin-top: 10px;
 	@media @mobile {
 		.column(12);
@@ -140,12 +244,12 @@ label {
 		list-style: none;
 		li {
 			display: inline-block;
-			border: 1px solid @lightgrey;
-			border-bottom: 0;
 		}
 		a {
 			padding: 5px;
-			background: #999;
+			background: #CFCFCF;
+			border: 1px solid #CFCFCF;
+			border-bottom: 0;
 			color: #000;
 			display: block;
 			text-decoration: none;
@@ -167,7 +271,7 @@ label {
 	border-top: 0;
 	padding: 10px;
 	clear: both;
-	height: 360px;
+	height: 310px;
 	.box-sizing();
 }
 table {
@@ -181,6 +285,9 @@ table {
 	td, th {
 		padding: 6px;
 		border: 1px solid darken(@lightgrey,10%);
+	}
+	.assignment {
+		width: 250px;
 	}
 	input {
 		padding: 0;
@@ -198,23 +305,68 @@ a.addAssignment {
 }
 // GPA
 .gpa {
-	.column(6);
-	.current {
-		font-size: 3em;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	padding: 20px 0;
+	text-align: right;
+	font-size: 1.6em;
+	.grade {
+		font-size: 1.2em;
+		.column(6);
+		div, span {
+			.column(6);
+		}
 	}
-	@media @mobile {
-		.column(12);
+	ul {
+		border-left: 1px solid #999;
+		.box-sizing();
+		margin: 0;
+		padding: 0 0 0 10px;
+		list-style: none;
+		.column(6);
+		li {
+			.clearfix();
+			display: block;
+			padding: 10px 0;
+			clear: both;
+			&:last-child {
+				border-top: 1px solid #999;
+			}
+			div {
+				.column(6);
+			}
+			span {
+				.column(6);
+			}
+		}
+	}
+	.column(10);
+	.push(1);
+	.row();
+	span {
+		font-weight: 800;
+		font-size: 60px;
+	}
+	span.current {
+		font-size: 88px;
+		font-weight: 800;
 	}
 }
 a.addCourse {
 	padding: 5px;
-	background: darkturquoise;
-	color: #000;
+	background: @blue;
+	font-weight: 800;
+	color: #fff;
 	display: inline-block;
 	text-decoration: none;
 	position: absolute;
 	top: 0;
 	right: 0;
+	&:hover {
+		background: @yellow;
+		color: #333;
+		cursor: pointer;
+	}
 }
 
 

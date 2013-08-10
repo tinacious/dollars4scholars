@@ -1,4 +1,6 @@
 @import '../js/fancybox/fancybox.css';
+
+@import 'jqueryui.css';
 /*! normalize.css v2.1.1 | MIT License | git.io/normalize */
 article,
 aside,
@@ -183,6 +185,10 @@ body:after {
 html.idea {
   background: #0bb1e6;
 }
+html.idea .white {
+  background: #fff;
+  color: #333;
+}
 html.idea body {
   color: #fff;
 }
@@ -191,24 +197,63 @@ html.idea i {
   font-weight: 400;
   color: #f9ed32;
 }
+html.idea img {
+  display: block;
+}
 html.idea .text {
-  font-size: 2.4em;
+  clear: both;
+  font-size: 45px;
   text-align: center;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 html.idea .text .bigger {
-  font-size: 1.5em;
+  font-size: 55px;
 }
 html.idea .text .sticker {
   background: #f9ed32;
   padding: 10px 20px;
   display: inline-block;
   color: #666;
-  margin: 10px 0;
+}
+html.idea .student {
+  margin: 20px auto;
+}
+html.idea .line01,
+html.idea .line02,
+html.idea .line03,
+html.idea .yep,
+html.idea .teach-me {
+  position: absolute;
+}
+html.idea .line01 {
+  top: 176px;
+  left: 0;
+}
+html.idea .line02 {
+  top: 70px;
+  right: 80px;
+}
+html.idea .line03 {
+  top: 530px;
+  right: 30px;
+}
+html.idea .line04 {
+  margin: 0 auto;
+}
+html.idea .yep {
+  top: 125px;
+  right: 240px;
+  font-size: 30px;
+}
+html.idea .teach-me {
+  top: 570px;
+  right: 110px;
+  font-size: 30px;
 }
 html.idea .idea-container {
-  max-width: 850px;
+  width: 850px;
   margin: 0 auto;
+  position: relative;
   *zoom: 1;
 }
 html.idea .idea-container:before,
@@ -223,6 +268,73 @@ html.idea .idea-container:after {
   html.idea .idea-container {
     padding: 0 10px;
   }
+}
+html.idea .social {
+  text-align: center;
+}
+html.idea .social ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+html.idea .social li {
+  display: inline-block;
+  padding: 20px;
+}
+html.idea .scholarships .scholarship {
+  *zoom: 1;
+  padding: 15px;
+  font-size: 28px;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #efefef;
+}
+html.idea .scholarships .scholarship:before,
+html.idea .scholarships .scholarship:after {
+  content: "";
+  display: table;
+}
+html.idea .scholarships .scholarship:after {
+  clear: both;
+}
+html.idea .scholarships .scholarship img {
+  float: left;
+}
+html.idea .scholarships .scholarship p {
+  margin: 3px 0;
+}
+html.idea .scholarships .scholarship .info {
+  display: inline;
+  float: left;
+  width: 64.58333333333334%;
+  margin: 0 1.0416666666666665%;
+}
+html.idea .scholarships .cta {
+  width: 80px;
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-left: 1px solid #999;
+}
+html.idea .scholarships .cta li {
+  display: block;
+  clear: both;
+}
+html.idea .scholarships .cta li:last-child {
+  border-top: 1px solid #999;
+}
+html.idea .scholarships .cta a {
+  display: block;
+  padding: 15px 30px 15px 15px;
+  width: 100%;
+}
+html.idea .scholarships .cta img {
+  clear: both;
+  display: block;
+  margin-top: -13px;
 }
 body {
   font-family: lexia, georgia, serif;
@@ -251,8 +363,7 @@ textarea {
 }
 input:focus,
 textarea:focus {
-  outline: none;
-  box-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
+  outline: 1px solid #0bb1e6;
 }
 fieldset {
   border: 0;
@@ -283,6 +394,16 @@ label {
 }
 .section {
   padding: 2em 0;
+  clear: both;
+  *zoom: 1;
+}
+.section:before,
+.section:after {
+  content: "";
+  display: table;
+}
+.section:after {
+  clear: both;
 }
 .buffered {
   display: inline;
@@ -307,25 +428,29 @@ label {
   height: 0;
 }
 .btn {
-  background: deeppink;
+  background: #0bb1e6;
   display: inline-block;
   text-decoration: none;
   border: 0;
   color: #fff;
   font-weight: 800;
   padding: 0.3em 0.8em;
-  border-radius: 4px;
   margin-top: 10px;
 }
 .btn:hover {
-  background: dodgerblue;
+  background: #f9ed32;
+  color: #333;
   cursor: pointer;
+}
+.ui-datepicker {
+  font-size: 16px;
 }
 .tabs-module {
   display: inline;
   float: left;
-  width: 47.91666666666667%;
+  width: 81.25%;
   margin: 0 1.0416666666666665%;
+  margin-left: 9.374999999999998%;
   margin-top: 10px;
 }
 @media all and (max-width: 767px) {
@@ -346,12 +471,12 @@ label {
 }
 .tabs-nav ul li {
   display: inline-block;
-  border: 1px solid #efefef;
-  border-bottom: 0;
 }
 .tabs-nav ul a {
   padding: 5px;
-  background: #999;
+  background: #CFCFCF;
+  border: 1px solid #CFCFCF;
+  border-bottom: 0;
   color: #000;
   display: block;
   text-decoration: none;
@@ -371,7 +496,7 @@ label {
   border-top: 0;
   padding: 10px;
   clear: both;
-  height: 360px;
+  height: 310px;
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -391,6 +516,9 @@ table th {
   padding: 6px;
   border: 1px solid #d6d6d6;
 }
+table .assignment {
+  width: 250px;
+}
 table input {
   padding: 0;
   border: 0;
@@ -405,31 +533,109 @@ a.addAssignment {
   right: 10px;
 }
 .gpa {
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  padding: 20px 0;
+  text-align: right;
+  font-size: 1.6em;
+  display: inline;
+  float: left;
+  width: 81.25%;
+  margin: 0 1.0416666666666665%;
+  margin-left: 9.374999999999998%;
+  display: block;
+  width: 102.08333333333333%;
+  margin: 0 -1.0416666666666665%;
+  *zoom: 1;
+}
+.gpa .grade {
+  font-size: 1.2em;
   display: inline;
   float: left;
   width: 47.91666666666667%;
   margin: 0 1.0416666666666665%;
 }
-.gpa .current {
-  font-size: 3em;
+.gpa .grade div,
+.gpa .grade span {
+  display: inline;
+  float: left;
+  width: 47.91666666666667%;
+  margin: 0 1.0416666666666665%;
 }
-@media all and (max-width: 767px) {
-  .gpa {
-    display: inline;
-    float: left;
-    width: 97.91666666666666%;
-    margin: 0 1.0416666666666665%;
-  }
+.gpa ul {
+  border-left: 1px solid #999;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 0 0 10px;
+  list-style: none;
+  display: inline;
+  float: left;
+  width: 47.91666666666667%;
+  margin: 0 1.0416666666666665%;
+}
+.gpa ul li {
+  *zoom: 1;
+  display: block;
+  padding: 10px 0;
+  clear: both;
+}
+.gpa ul li:before,
+.gpa ul li:after {
+  content: "";
+  display: table;
+}
+.gpa ul li:after {
+  clear: both;
+}
+.gpa ul li:last-child {
+  border-top: 1px solid #999;
+}
+.gpa ul li div {
+  display: inline;
+  float: left;
+  width: 47.91666666666667%;
+  margin: 0 1.0416666666666665%;
+}
+.gpa ul li span {
+  display: inline;
+  float: left;
+  width: 47.91666666666667%;
+  margin: 0 1.0416666666666665%;
+}
+.gpa:before,
+.gpa:after {
+  content: "";
+  display: table;
+}
+.gpa:after {
+  clear: both;
+}
+.gpa span {
+  font-weight: 800;
+  font-size: 60px;
+}
+.gpa span.current {
+  font-size: 88px;
+  font-weight: 800;
 }
 a.addCourse {
   padding: 5px;
-  background: darkturquoise;
-  color: #000;
+  background: #0bb1e6;
+  font-weight: 800;
+  color: #fff;
   display: inline-block;
   text-decoration: none;
   position: absolute;
   top: 0;
   right: 0;
+}
+a.addCourse:hover {
+  background: #f9ed32;
+  color: #333;
+  cursor: pointer;
 }
 .scholarships {
   display: inline;

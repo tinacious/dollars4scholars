@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Dollars 4 Scholars — Pitch</title>
-		<link rel="stylesheet" href="css/idea.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<div class="container">
@@ -16,11 +16,31 @@
 					</p>
 				</div>
 
+				<img src="img/line01.png" class="line01">
+
+				<img src="img/student01.png" class="student">
+
+				<img src="img/line02.png" class="line02">
+
+				<p class="yep">yep</p>
+
 				<div class="text">
 					<p>
-						Would you like to get <b>paid</b> to go to school<b>?</b>
+						Would you like to <br>get <b>paid</b> to go to school<b>?</b>
 					</p>
 				</div>
+
+				<img src="img/student02.png" class="student">
+
+				<img src="img/line03.png" class="line03">
+
+				<p class="teach-me">
+					YES!!!
+					<br>
+					Teach me, <br>oh wise one!
+				</p>
+
+				<img src="img/line04.png" class="line04">
 
 				<div class="text">
 					<p>
@@ -28,7 +48,7 @@
 							<b>Dollars 4 Scholars</b>
 						</span>
 						<br>
-						<b>bringing scholarships to you!</b>
+						<b>brings scholarships to you!</b>
 					</p>
 				</div>
 
@@ -54,126 +74,190 @@
 						Show us some love by signing up below.
 					</p>
 				</div>
-			</div>
 
+				<div class="social">
+					<ul>
+						<li>
+							<a href="http://twitter.com/dollars4scholarsapp">
+								<img src="img/twitter.png" alt="Twitter icon">
+							</a>
+						</li>
+						<li>
+							<a href="http://facebook.com">
+								<img src="img/facebook.png" alt="Facebook icon">
+							</a>
+						</li>
+					</ul>	
+				</div> <!-- /.social -->
 
+				<div class="text">
+					<span class="sticker">See GAS Tracker in action</span>
+				</div>
+				
+			</div> <!-- /.idea-container -->
 
+		</div> <!-- /.container -->
 
+		<div class="white section">
+			<div class="idea-container">
+				<div class="tabs-module">
+					<!-- tabs navigation -->
+					<div class="tabs-nav">
+						<ul>
+							<li>
+								<a href="#class1">Law 101</a>
+							</li>
+							<li>
+								<a href="#class2">Law 102</a>
+							</li>
+						</ul>
+						<a class="addCourse" href="#modalAddCourse">Add a Course</a>
+					</div>
+					
+					<!-- tabs -->
+					<div class="tabs-section">
+						<div id="class1" class="tab-content">
+							<div class="table-section">
+								<table>
+									<thead>
+										<tr>
+											<th class="assignment">Assignment</th>
+											<th>Grade</th>
+											<th>% of grade</th>
+											<th>Due Date</th>
+										</tr>
+										<tbody>
+											<tr>
+												<td>
+													<input type="text" value="Assignment 1">
+												</td>
+												<td><input type="number" value="50"></td>
+												<td><input type="number" value="0.2"></td>
+												<td><input type="text" class="datepicker" value="08/06/2013"></td>
+											</tr>
+											<tr>
+												<td><input type="text" value="Assignment 2"></td>
+												<td><input type="number" value="60"></td>
+												<td><input type="number" value="0.5"></td>
+												<td><input type="text" class="datepicker" value="08/06/2013"></td>
+											</tr>
+											<tr>
+												<td><input type="text" value="Mid-term Exam"></td>
+												<td><input type="number" value="70"></td>
+												<td><input type="number" value="10"></td>
+												<td><input type="text" class="datepicker" value="08/06/2013"></td>
+											</tr>
+											<tr>
+												<td><input type="text" value="Final Exam"></td>
+												<td><input type="number" value="70"></td>
+												<td><input type="number" value="20"></td>
+												<td><input type="text" class="datepicker" value="08/06/2013"></td>
+											</tr>
+										</tbody>
+									</thead>
+								</table>
+								<a href="#" class="addAssignment btn">Add an Assignment</a>
+							</div> <!-- /.table-section -->
 
+						</div> <!-- /#term1 .tab-content -->
 
+						<div id="class2" class="tab-content">
+							
+							<div class="table-section">
+								<table>
+									<thead>
+										<tr>
+											<th class="assignment">Assignment</th>
+											<th>Grade</th>
+											<th>% of grade</th>
+											<th>Due Date</th>
+										</tr>
+										<tbody>
+											<tr>
+												<td>
+													<input type="text" value="Essay (6 pages)">
+												</td>
+												<td><input type="number" value="50"></td>
+												<td><input type="number" value="10"></td>
+												<td><input type="text" class="datepicker" value="08/06/2013"></td>
+											</tr>
+											<tr>
+												<td><input type="text" value="Test 1"></td>
+												<td><input type="number" value="90"></td>
+												<td><input type="number" value="2"></td>
+												<td><input type="text" class="datepicker" value="08/06/2013"></td>
+											</tr>
+										</tbody>
+									</thead>
+								</table>
+								<a href="#" class="addAssignment btn">Add an Assignment</a>
+							</div>
+						</div> <!-- /#term1 .tab-content -->
+					</div> <!-- /.tabs-section -->
+				</div> <!-- /.tabs-module -->
 
+				<div class="section">
+					<div class="gpa">
+						<div class="grade">
+							<div>Law 101 <br>Grade:</div>
+							<span class="current">85%</span>
+						</div>
+						<ul>
+							<li>
+								<div>Cumulative<br> GPA:</div>
+								<span>83%</span>
+							</li>
+							<li>
+								<div>Term<br> GPA:</div>
+								<span>88%</span>
+							</li>
+						</ul>
+					</div>
+				</div> <!-- /.section -->
 
+				<div class="text">
+					<p>
+						<b>Scholarships recommended for you:</b>
+					</p>
+				</div>
 
+				<div class="scholarships">
+					<div class="scholarship">
+						<img src="img/sch01.png">
+						<div class="info">
+							<p><b>$1,000</b></p>
+							<p>
+								4-H Scholarship
+							</p>
+							<p>
+								Canadian Natural Resources Limited
+							</p>
+						</div>
+						<ul class="cta">
+							<li>
+								<a href="#">
+									<img src="img/star-inactive.png" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/apply-inactive.png" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 
-			<br><br><br><br><br><br><br><br><br>
+			</div> <!-- /.idea-container -->
+		</div> <!-- /.white -->
 
 
 
 
 			
-			<div class="tabs-module">
-				<!-- tabs navigation -->
-				<div class="tabs-nav">
-					<ul>
-						<li>
-							<a href="#class1">Law 101</a>
-						</li>
-						<li>
-							<a href="#class2">Law 102</a>
-						</li>
-					</ul>
-					<a class="addCourse" href="#modalAddCourse">Add a Course</a>
-				</div>
-				
-				<!-- tabs -->
-				<div class="tabs-section">
-					<div id="class1" class="tab-content">
-						<div class="table-section">
-							<table>
-								<thead>
-									<tr>
-										<th>Assignment</th>
-										<th>Grade</th>
-										<th>% of final grade</th>
-									</tr>
-									<tbody>
-										<tr>
-											<td>
-												<input type="text" value="Assignment 1">
-											</td>
-											<td><input type="number" value="50"></td>
-											<td><input type="number" value="0.2"></td>
-										</tr>
-										<tr>
-											<td><input type="text" value="Assignment 2"></td>
-											<td><input type="number" value="60"></td>
-											<td><input type="number" value="0.5"></td>
-										</tr>
-										<tr>
-											<td><input type="text" value="Mid-term Exam"></td>
-											<td><input type="number" value="70"></td>
-											<td><input type="number" value="10"></td>
-										</tr>
-										<tr>
-											<td><input type="text" value="Final Exam"></td>
-											<td><input type="number" value="70"></td>
-											<td><input type="number" value="20"></td>
-										</tr>
-									</tbody>
-								</thead>
-							</table>
-							<a href="#" class="addAssignment btn">Add an Assignment</a>
-						</div> <!-- /.table-section -->
+			 
 
-					</div> <!-- /#term1 .tab-content -->
-
-					<div id="class2" class="tab-content">
-						
-						<div class="table-section">
-							<table>
-								<thead>
-									<tr>
-										<th>Assignment</th>
-										<th>Grade</th>
-										<th>% of final grade</th>
-									</tr>
-									<tbody>
-										<tr>
-											<td>
-												<input type="text" value="Essay (6 pages)">
-											</td>
-											<td><input type="number" value="50"></td>
-											<td><input type="number" value="10"></td>
-										</tr>
-										<tr>
-											<td><input type="text" value="Test 1"></td>
-											<td><input type="number" value="90"></td>
-											<td><input type="number" value="2"></td>
-										</tr>
-									</tbody>
-								</thead>
-							</table>
-							<a href="#" class="addAssignment btn">Add an Assignment</a>
-						</div>
-					</div> <!-- /#term1 .tab-content -->
-
-				</div> <!-- /.tabs-section -->
-
-			</div> <!-- /.tabs-module -->
-
-			<div class="gpa">
-				<p class="current">
-					85%
-				</p>
-				<ul>
-					<li>
-						<span>Cumulative GPA:</span> 83%
-					</li>
-					<li>
-						<span>Term GPA:</span> 88%
-					</li>
-				</ul>
-			</div>
+			
 
 			<!-- Scholarships -->
 			<div class="scholarships">
@@ -202,6 +286,7 @@
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 		<!-- jQuery -->
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+		<script src="js/jqueryui.js"></script>
 		<!-- Responsive Video plugin by Tinacious Design -->
 		<script src="js/tinaciousFluidVid.min.js"></script>
 		<script src="js/fancybox/fancybox.pack.js"></script>

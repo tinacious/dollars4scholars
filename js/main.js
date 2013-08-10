@@ -32,10 +32,14 @@ $(document).ready(function(){
 		// Add an Assignment
 		$('.addAssignment').click(function(){
 			var assignmentTable = $(this).siblings('table');
-			assignmentTable.find('tbody').append('<tr><td><input type="text"></td><td><input type="number"></td><td><input type="number"></td></tr>');
+			assignmentTable.find('tbody').append('<tr><td><input type="text"></td><td><input type="number"></td><td><input type="number"></td><td><input type="text" class="datepicker"></td></tr>');
 			assignmentTable.find('tr:last input:first').focus();
-
+			$('.datepicker').datepicker();
+			return false;
 		});
+
+		// Due date
+		$('.datepicker').datepicker();
 
 });
 
