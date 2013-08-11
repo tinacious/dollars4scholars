@@ -895,13 +895,15 @@ a.addCourse:hover {
   margin: 0 1.0416666666666665%;
   margin-left: 9.374999999999998%;
 }
-.signup .validation-summary-errors ul {
+.signup .validation-summary-errors ul,
+.signup .validation-summary-valid ul {
   clear: both;
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.signup .validation-summary-errors li {
+.signup .validation-summary-errors li,
+.signup .validation-summary-valid li {
   display: block;
 }
 .signup a.register-link {
