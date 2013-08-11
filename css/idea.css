@@ -572,6 +572,7 @@ html.idea a.cta-signup {
   color: #0bb1e6;
 }
 .scholarships .scholarship .info .warning-icon img {
+  width: 30px;
   position: absolute;
   top: 0;
   right: -6px;
