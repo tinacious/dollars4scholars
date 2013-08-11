@@ -41,5 +41,11 @@ $(document).ready(function(){
 		// Due date
 		$('.datepicker').datepicker();
 
+	// Scholarship Add to Favourites
+	$('.addFavourite').click(function(){
+		$(this).attr('src','img/star-active.png');
+		return false;
+	});
+
 });
 

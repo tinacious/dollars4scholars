@@ -118,6 +118,13 @@ html.idea {
 			.info {
 				.column(8);
 				padding-left: 10px;
+				a {
+					color: #333;
+					text-decoration: none;
+					&:hover {
+						color: @blue;
+					}
+				}
 			}
 			
 		}
@@ -144,6 +151,9 @@ html.idea {
 				clear: both;
 				display: block;
 				margin: -13px 0 0 -5px;
+				&.addFavourite {
+					margin-left: 3px;
+				}
 			}
 		}
 	}
@@ -158,6 +168,38 @@ html.idea {
 		color: #333;
 	}
 }
+// Sign-up form
+html.signup-form {
+	background: @blue;
+	.signup {
+		.column(8);
+		.push(2);
+		margin-top: 60px;
+		@media @mobile {
+			.push(0);
+			.column(12);
+			margin-top: 20px;
+		}
+	}
+	h4 {
+		margin-bottom: 10px;
+	}
+}
+.socialsignon {
+	margin-bottom: 40px;
+	a {
+		font-size: 0.8em;			
+	}
+	@media @mobile {
+		margin: 10px 0 40px 0;
+		a {
+			display: block;
+			clear: both;
+			width: 45%;
+			margin: 5px 0;
+		}
+	}
+}
 
 // typography
 body {
@@ -166,6 +208,9 @@ body {
 	color: #333;
 	font-weight: 300;
 	font-size: 1.4em;
+	@media @mobile {
+		font-size: 1.2em;
+	}
 }
 h1, h2, h3, h4 {
 	font-weight: 800;
@@ -211,6 +256,12 @@ label {
 .buffered {
 	.column(10);
 	.push(1);
+}
+.top {
+	padding-top: 70px;
+	@media @mobile {
+		padding-top: 20px;
+	}
 }
 
 // Responsive Video Plugin
@@ -291,7 +342,7 @@ label {
 	border-top: 0;
 	padding: 10px;
 	clear: both;
-	height: 310px;
+	height: 320px;
 	.box-sizing();
 }
 table {
@@ -317,6 +368,9 @@ table {
 			outline: 0;
 			color: dodgerblue;
 		}
+	}
+	.activeRow {
+		background: lighten(@blue,10%);
 	}
 }
 a.addAssignment {
@@ -398,6 +452,36 @@ a.addCourse {
 // Top banner, nav
 .banner {
 	background: #fff;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	box-shadow: 0 0 20px fade(#000,70%);
+	padding: 7px 0;
+	margin-bottom: 60px;
+	ul {
+		width: 200px;
+		margin: 5px 0 0 0;
+		text-align: right;
+		float: right;
+		list-style: none;
+		font-size: 0.8em;
+		li {
+			display: inline-block;
+		}
+	}
+	img {
+		float: left;
+	}
+	@media @mobile {
+		img {
+			height: 40px;
+		}
+		ul {
+			width: 100px;
+			margin-top: 0;
+			font-size: 0.6em;
+		}
+	}
 }
 
 // Promo section
@@ -427,11 +511,29 @@ a.addCourse {
 }
 .signup-area {
 	.row();
+	a.learn-more {
+		background: @yellow;
+		color: #333;
+		margin-top: 30px;
+		clear: both;
+		font-size: 1.3em;
+		.push(1);
+		@media @mobile {
+			width: 200px;
+			display: block;
+			.push(0);
+			margin: 30px auto;
+			clear: both;
+		}
+	}
 }
 .signup {
 	.column(5);
 	background: @lightgrey;
+	box-shadow: 5px 5px 10px fade(#000,40%);
 	color: #333;
+	margin-top: 35px;
+	padding-bottom: 40px;
 	fieldset {
 		.column(10);
 		.push(1);
@@ -439,7 +541,6 @@ a.addCourse {
 }
 .count {
 	font-size: 3em;
-
 }
 img.appstore {
 	width: 200px;
@@ -460,7 +561,7 @@ img.appstore {
 	.row();
 	img {
 		.column(3);
-		height: 150px;
+
 		display: block;
 		margin-bottom: 10px;
 		background: @lightgrey;
@@ -474,7 +575,14 @@ img.appstore {
 
 // Testimonials
 .testimonials {
+	font-size: 0.8em;
 	.row();
+	blockquote {
+		background: url(../img/quotes.png) left top no-repeat;
+		margin-left: 0;
+		padding-left: 55px;
+		font-style: italic;
+	}
 }
 .testimonial {
 	.column(4);

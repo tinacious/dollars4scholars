@@ -325,6 +325,13 @@ html.idea .scholarships .scholarship .info {
   margin: 0 1.0416666666666665%;
   padding-left: 10px;
 }
+html.idea .scholarships .scholarship .info a {
+  color: #333;
+  text-decoration: none;
+}
+html.idea .scholarships .scholarship .info a:hover {
+  color: #0bb1e6;
+}
 html.idea .scholarships .cta {
   width: 80px;
   float: right;
@@ -350,6 +357,9 @@ html.idea .scholarships .cta img {
   display: block;
   margin: -13px 0 0 -5px;
 }
+html.idea .scholarships .cta img.addFavourite {
+  margin-left: 3px;
+}
 html.idea a.cta-signup {
   margin: 30px 0;
   padding: 25px 40px;
@@ -359,12 +369,58 @@ html.idea a.cta-signup {
   background: #f9ed32;
   color: #333;
 }
+html.signup-form {
+  background: #0bb1e6;
+}
+html.signup-form .signup {
+  display: inline;
+  float: left;
+  width: 64.58333333333334%;
+  margin: 0 1.0416666666666665%;
+  margin-left: 17.708333333333332%;
+  margin-top: 60px;
+}
+@media all and (max-width: 767px) {
+  html.signup-form .signup {
+    margin-left: 1.0416666666666665%;
+    display: inline;
+    float: left;
+    width: 97.91666666666666%;
+    margin: 0 1.0416666666666665%;
+    margin-top: 20px;
+  }
+}
+html.signup-form h4 {
+  margin-bottom: 10px;
+}
+.socialsignon {
+  margin-bottom: 40px;
+}
+.socialsignon a {
+  font-size: 0.8em;
+}
+@media all and (max-width: 767px) {
+  .socialsignon {
+    margin: 10px 0 40px 0;
+  }
+  .socialsignon a {
+    display: block;
+    clear: both;
+    width: 45%;
+    margin: 5px 0;
+  }
+}
 body {
   font-family: lexia, georgia, serif;
   -webkit-font-smoothing: antialiased;
   color: #333;
   font-weight: 300;
   font-size: 1.4em;
+}
+@media all and (max-width: 767px) {
+  body {
+    font-size: 1.2em;
+  }
 }
 h1,
 h2,
@@ -434,6 +490,14 @@ label {
   width: 81.25%;
   margin: 0 1.0416666666666665%;
   margin-left: 9.374999999999998%;
+}
+.top {
+  padding-top: 70px;
+}
+@media all and (max-width: 767px) {
+  .top {
+    padding-top: 20px;
+  }
 }
 .responsive-video object,
 .responsive-video iframe {
@@ -519,7 +583,7 @@ label {
   border-top: 0;
   padding: 10px;
   clear: both;
-  height: 310px;
+  height: 320px;
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -550,6 +614,9 @@ table input:focus {
   box-shadow: none;
   outline: 0;
   color: dodgerblue;
+}
+table .activeRow {
+  background: #2fc5f5;
 }
 a.addAssignment {
   position: absolute;
@@ -669,6 +736,36 @@ a.addCourse:hover {
 }
 .banner {
   background: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  padding: 7px 0;
+  margin-bottom: 60px;
+}
+.banner ul {
+  width: 200px;
+  margin: 5px 0 0 0;
+  text-align: right;
+  float: right;
+  list-style: none;
+  font-size: 0.8em;
+}
+.banner ul li {
+  display: inline-block;
+}
+.banner img {
+  float: left;
+}
+@media all and (max-width: 767px) {
+  .banner img {
+    height: 40px;
+  }
+  .banner ul {
+    width: 100px;
+    margin-top: 0;
+    font-size: 0.6em;
+  }
 }
 .promo-content {
   display: block;
@@ -726,13 +823,33 @@ a.addCourse:hover {
 .signup-area:after {
   clear: both;
 }
+.signup-area a.learn-more {
+  background: #f9ed32;
+  color: #333;
+  margin-top: 30px;
+  clear: both;
+  font-size: 1.3em;
+  margin-left: 9.374999999999998%;
+}
+@media all and (max-width: 767px) {
+  .signup-area a.learn-more {
+    width: 200px;
+    display: block;
+    margin-left: 1.0416666666666665%;
+    margin: 30px auto;
+    clear: both;
+  }
+}
 .signup {
   display: inline;
   float: left;
   width: 39.58333333333333%;
   margin: 0 1.0416666666666665%;
   background: #efefef;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
   color: #333;
+  margin-top: 35px;
+  padding-bottom: 40px;
 }
 .signup fieldset {
   display: inline;
@@ -778,7 +895,6 @@ img.appstore {
   float: left;
   width: 22.916666666666664%;
   margin: 0 1.0416666666666665%;
-  height: 150px;
   display: block;
   margin-bottom: 10px;
   background: #efefef;
@@ -794,6 +910,7 @@ img.appstore {
   }
 }
 .testimonials {
+  font-size: 0.8em;
   display: block;
   width: 102.08333333333333%;
   margin: 0 -1.0416666666666665%;
@@ -806,6 +923,12 @@ img.appstore {
 }
 .testimonials:after {
   clear: both;
+}
+.testimonials blockquote {
+  background: url(../img/quotes.png) left top no-repeat;
+  margin-left: 0;
+  padding-left: 55px;
+  font-style: italic;
 }
 .testimonial {
   display: inline;
