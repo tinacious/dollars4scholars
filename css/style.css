@@ -826,6 +826,18 @@ a.addCourse:hover {
   width: 56.25%;
   margin: 0 1.0416666666666665%;
 }
+@media all and (max-width: 767px) {
+  .promo-content .description,
+  .promo-content .video {
+    display: inline;
+    float: left;
+    width: 97.91666666666666%;
+    margin: 0 1.0416666666666665%;
+  }
+  .promo-content .video {
+    margin-top: 20px;
+  }
+}
 .description {
   display: inline;
   float: left;
@@ -958,7 +970,6 @@ img.appstore {
     width: 47.91666666666667%;
     margin: 0 1.0416666666666665%;
     margin-bottom: 10px;
-    height: 100px;
   }
 }
 .testimonials {

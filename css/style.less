@@ -530,6 +530,14 @@ a.addCourse {
 	.video {
 		.column(7);
 	}
+	@media @mobile {
+		.description, .video {
+			.column(12);
+		}
+		.video {
+			margin-top: 20px;
+		}
+	}
 }
 
 // All sections with description
@@ -624,7 +632,6 @@ img.appstore {
 		@media @mobile {
 			.column(6);
 			margin-bottom: 10px;
-			height: 100px;
 		}
 	}
 }
