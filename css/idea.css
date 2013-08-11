@@ -1585,12 +1585,11 @@ html.dashboard .dashboard-gpa span {
   width: 100%;
   font-size: 2em;
 }
-html.dashboard .notEligible {
+html.dashboard h3 {
   text-align: center;
 }
 html.dashboard .scholarships {
   margin: 30px 0;
-  display: none;
 }
 html.dashboard .scholarships .scholarship {
   display: inline;
@@ -1657,4 +1656,7 @@ html.dashboard .scholarships .cta img.addFavourite {
   html.dashboard table .assignment {
     width: 140px;
   }
+}
+.hideThis {
+  display: none;
 }

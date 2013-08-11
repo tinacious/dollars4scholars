@@ -38,7 +38,6 @@ $(document).ready(function(){
 		// Dashboard Assignment Adding
 		$('#updateMarks').datepicker({
 			onClose: function(dateText, inst){
-				$(this).focus();
 				// Hide not eligible
 				$('.notEligible').fadeOut(100).html('You are now eligible for the following scholarships!').fadeIn(1000);
 				
