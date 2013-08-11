@@ -478,6 +478,7 @@ label {
 .container {
   max-width: 960px;
   margin: 0 auto;
+  overflow: hidden;
   *zoom: 1;
 }
 .container:before,
@@ -792,7 +793,7 @@ a.addCourse:hover {
 }
 @media all and (max-width: 767px) {
   .banner img {
-    height: 40px;
+    height: 30px;
   }
   .banner ul {
     width: 100px;
@@ -924,6 +925,11 @@ a.addCourse:hover {
 }
 .count {
   font-size: 3em;
+}
+@media all and (max-width: 767px) {
+  .count {
+    font-size: 2.5em;
+  }
 }
 img.appstore {
   width: 200px;
@@ -1137,11 +1143,15 @@ html.dashboard .scholarships .cta img.addFavourite {
     margin: 0 1.0416666666666665%;
     margin-bottom: 20px;
     height: 120px;
+    padding: 8px;
   }
   html.dashboard .scholarships .scholarship .logo {
-    width: 60px;
-    height: 60px;
-    padding: 12px 8px;
+    width: 45px;
+    height: 45px;
+    padding: 8px 6px;
+  }
+  html.dashboard .scholarships .cta img {
+    width: 28px;
   }
   html.dashboard .tabs-module {
     display: inline;
@@ -1157,6 +1167,7 @@ html.dashboard .scholarships .cta img.addFavourite {
     margin-left: 9.374999999999998%;
     margin-top: 15px;
     text-align: right;
+    font-size: 0.8em;
   }
   html.dashboard .dashboard-gpa span {
     display: inline;
