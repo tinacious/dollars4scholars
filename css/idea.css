@@ -809,7 +809,8 @@ ul.button-list li {
   color: #333;
   cursor: pointer;
 }
-.btn.help {
+.btn.help,
+.btn.ok {
   background: green;
 }
 .btn.remove {
