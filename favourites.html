@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html class="dashboard">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Dollars 4 Scholars — Trial Version – Dashboard</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="banner">
+			<div class="container">
+				<a href="dashboard.html"><img src="img/dollars4scholars-logo-icon.png"></a>
+				<a href="#" class="mobile-link">
+					<img src="img/menu.png">
+				</a>
+				<ul>
+					<li>
+						<a href="favourites.html">Favourites</a>
+					</li>
+					<li>
+						<a href="#">Courses</a>
+					</li>
+					<li>
+						<a href="#">Admin</a>
+					</li>
+					<li>
+						<a href="login.html">Logout</a>
+					</li>
+				</ul>
+			</div>
+		</div> <!-- /.banner -->
+
+		<div class="container top">
+			<h2>Dashboard</h2>
+			<div class="dashboard-section">
+				<div class="tabs-module">
+
+					<!-- tabs navigation -->
+					<div class="tabs-nav">
+						<ul>
+							<li>
+								<a href="#class1">Law 101</a>
+							</li>
+							<li>
+								<a href="#class2">Law 102</a>
+							</li>
+						</ul>
+						<a class="addCourse" href="#modalAddCourse">Add a Course</a>
+					</div>
+					
+					<!-- tabs -->
+					<div class="tabs-section">
+						<div id="class1" class="tab-content">
+							<div class="table-section">
+								<table>
+									<thead>
+										<tr>
+											<th class="assignment">Assignment</th>
+											<th>Grade</th>
+											<th>% of grade</th>
+											<th>Due Date</th>
+										</tr>
+										<tbody>
+											<tr>
+												<td>
+													<input type="text" value="Assignment 1">
+												</td>
+												<td><input type="number" value="50"></td>
+												<td><input type="number" value="10"></td>
+												<td><input type="text" class="datepicker" value="08/06/2013"></td>
+											</tr>
+											<tr>
+												<td><input type="text" value="Assignment 2"></td>
+												<td><input type="number" value="60"></td>
+												<td><input type="number" value="10"></td>
+												<td><input type="text" class="datepicker" value="08/06/2013"></td>
+											</tr>
+											<tr>
+												<td><input type="text" value="Mid-term Exam"></td>
+												<td><input type="number" value="70"></td>
+												<td><input type="number" value="20"></td>
+												<td><input type="text" class="datepicker" value="08/06/2013"></td>
+											</tr>
+											<tr>
+												<td><input type="text" value="Assignment 3"></td>
+												<td><input type="number" value="70"></td>
+												<td><input type="number" value="20"></td>
+												<td><input type="text" class="datepicker" value="08/06/2013"></td>
+											</tr>
+										</tbody>
+									</thead>
+								</table>
+								<a href="#" class="addAssignment btn">Add an Assignment</a>
+							</div> <!-- /.table-section -->
+
+						</div> <!-- /#term1 .tab-content -->
+
+						<div id="class2" class="tab-content">
+							
+							<div class="table-section">
+								<table>
+									<thead>
+										<tr>
+											<th class="assignment">Assignment</th>
+											<th>Grade</th>
+											<th>% of grade</th>
+											<th>Due Date</th>
+										</tr>
+										<tbody>
+											<tr>
+												<td>
+													<input type="text" value="Essay (6 pages)">
+												</td>
+												<td><input type="number" value="50"></td>
+												<td><input type="number" value="10"></td>
+												<td><input type="text" class="datepicker" value="08/06/2013"></td>
+											</tr>
+											<tr>
+												<td><input type="text" value="Test 1"></td>
+												<td><input type="number" value="90"></td>
+												<td><input type="number" value="2"></td>
+												<td><input type="text" class="datepicker" value="08/06/2013"></td>
+											</tr>
+										</tbody>
+									</thead>
+								</table>
+								<a href="#" class="addAssignment btn">Add an Assignment</a>
+							</div>
+						</div> <!-- /#term1 .tab-content -->
+					</div> <!-- /.tabs-section -->
+				</div> <!-- /.tabs-module -->
+
+				<div class="dashboard-gpa">
+					<ul>
+						<li>Law 101 Grade <span class="cgpa">80%</span></li>
+						<li>Cummulative GPA <span>83%</span></li>
+						<li>Term GPA <span class="tgpa">82%</span></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<h3>You are eligible for the following scholarships!</h3>
+
+			<div class="dashboard-section">
+				
+				<div class="scholarships">
+
+					<div class="scholarship">
+						<div class="logo">
+							<a href="#"><img src="img/tinacious-design-logo.gif"></a>
+						</div>
+						<div class="info">
+							<a href="#">
+								<p><b>$500</b></p>
+								<p>
+									Tinacious Design
+								</p>
+								<p>
+									Scholarships for Women in Software &amp; Web Development
+								</p>
+							</a>
+						</div>
+						<ul class="cta">
+							<li>
+								<a href="#">
+									<img src="img/star-inactive.png" class="addFavourite">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/apply-inactive.png" alt="">
+								</a>
+							</li>
+						</ul>
+					</div> <!-- /.scholarship -->
+
+					<div class="scholarship">
+						<div class="logo">
+							<a href="#"><img src="img/team-atomic-logo.png"></a>
+						</div>
+						<div class="info">
+							<a href="#">
+								<p><b>$800</b></p>
+								<p>
+									Team Atomic Inc.
+								</p>
+								<p>
+									Scholarships for Aspiring Web Professionals
+								</p>
+							</a>
+						</div>
+						<ul class="cta">
+							<li>
+								<a href="#">
+									<img src="img/star-inactive.png" class="addFavourite">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/apply-inactive.png" alt="">
+								</a>
+							</li>
+						</ul>
+					</div> <!-- /.scholarship -->
+
+					<div class="scholarship">
+						<div class="logo">
+							<a href="#"><img src="http://fakeimg.pl/100x80/fff/999/?text=Private"></a>
+						</div>
+						<div class="info">
+							<a href="#">
+								<p><b>$3,000</b></p>
+								<p>
+									An Insurance Company
+								</p>
+								<p>
+									Sign up to access this scholarship application
+								</p>
+							</a>
+						</div>
+						<ul class="cta">
+							<li>
+								<a href="#">
+									<img src="img/star-inactive.png" class="addFavourite">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/apply-inactive.png" alt="">
+								</a>
+							</li>
+						</ul>
+					</div> <!-- /.scholarship -->
+
+					<div class="scholarship">
+						<div class="logo">
+							<a href="#"><img src="http://fakeimg.pl/100x80/fff/999/?text=Private"></a>
+						</div>
+						<div class="info">
+							<a href="#">
+								<p><b>$1,000</b></p>
+								<p>
+									A Not-for-Profit Company
+								</p>
+								<p>
+									Sign up to access this scholarship application
+								</p>
+							</a>
+						</div>
+						<ul class="cta">
+							<li>
+								<a href="#">
+									<img src="img/star-inactive.png" class="addFavourite">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/apply-inactive.png" alt="">
+								</a>
+							</li>
+						</ul>
+					</div> <!-- /.scholarship -->
+
+					<div class="scholarship">
+						<div class="logo">
+							<a href="#"><img src="http://fakeimg.pl/100x80/fff/999/?text=Private"></a>
+						</div>
+						<div class="info">
+							<a href="#">
+								<p><b>$2,000</b></p>
+								<p>
+									A Food Services Company
+								</p>
+								<p>
+									Sign up to access this scholarship application
+								</p>
+							</a>
+						</div>
+						<ul class="cta">
+							<li>
+								<a href="#">
+									<img src="img/star-inactive.png" class="addFavourite">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/apply-inactive.png" alt="">
+								</a>
+							</li>
+						</ul>
+					</div> <!-- /.scholarship -->
+
+					<div class="scholarship">
+						<div class="logo">
+							<a href="#"><img src="http://fakeimg.pl/100x80/fff/999/?text=Private"></a>
+						</div>
+						<div class="info">
+							<a href="#">
+								<p><b>$2,000</b></p>
+								<p>
+									An Insurance Company
+								</p>
+								<p>
+									Sign up to access this scholarship application
+								</p>
+							</a>
+						</div>
+						<ul class="cta">
+							<li>
+								<a href="#">
+									<img src="img/star-inactive.png" class="addFavourite">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/apply-inactive.png" alt="">
+								</a>
+							</li>
+						</ul>
+					</div> <!-- /.scholarship -->
+					
+				</div>
+
+
+
+
+
+			</div> <!-- /.dashboard-section -->
+
+
+			<!-- Scholarships -->
+			 <!-- /.scholarships -->
+
+
+			
+		<!-- Inline Modal Windows -->
+		
+
+		<script type="text/javascript" src="//use.typekit.net/xcw2vjl.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<!-- jQuery -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+		<script src="js/jqueryui.js"></script>
+		<!-- Responsive Video plugin by Tinacious Design -->
+		<script src="js/tinaciousFluidVid.min.js"></script>
+		<script src="js/fancybox/fancybox.pack.js"></script>
+		<script src="js/plugins.js"></script>
+		<!-- jQuery scripts -->
+		<script src="js/main.js"></script>
+	</body>
+</html>
