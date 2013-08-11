@@ -5,7 +5,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 @import '../js/fancybox/fancybox.css';
 @import 'jqueryui.css';
 
-// Idea page
+// Idea page 
 html.idea {
 	background: @blue;
 	.white {
@@ -91,72 +91,6 @@ html.idea {
 			padding: 20px;
 		}
 	}
-	// Scholarships
-	.scholarships {
-		.scholarship {
-			margin-bottom: 25px;
-			box-shadow: 5px 5px 10px fade(#000,40%);
-			.clearfix();
-			.logo {
-				width: 140px;
-				height: 130px;
-				padding: 20px 10px;
-				float: left;
-				.box-sizing();
-				background: #fff;
-			}
-			img {
-				float: left;
-			}
-			padding: 20px;
-			font-size: 30px;
-			.box-sizing();
-			background: @lightgrey;
-			p {
-				margin: 3px 0;
-			}
-			.info {
-				.column(8);
-				padding-left: 10px;
-				a {
-					color: #333;
-					text-decoration: none;
-					&:hover {
-						color: @blue;
-					}
-				}
-			}
-			
-		}
-		.cta {
-			width: 80px;
-			float: right;
-			padding: 0;
-			margin: 0;
-			list-style: none;
-			border-left: 1px solid #999;
-			li {
-				display: block;
-				clear: both;
-				&:last-child {
-					border-top: 1px solid #999;
-				}
-			}
-			a {
-				display: block;
-				padding: 15px 30px 15px 15px;
-				width: 100%;
-			}
-			img {
-				clear: both;
-				display: block;
-				margin: -13px 0 0 -5px;
-				&.addFavourite {
-					margin-left: 3px;
-				}
-			}
-		}
-	}
 	// Sign up (idea page)
 	a.cta-signup {
 		margin: 30px 0;
@@ -168,6 +102,73 @@ html.idea {
 		color: #333;
 	}
 }
+// Scholarships
+.scholarships {
+	.scholarship {
+		margin-bottom: 25px;
+		box-shadow: 5px 5px 10px fade(#000,40%);
+		.clearfix();
+		.logo {
+			width: 140px;
+			height: 130px;
+			padding: 20px 10px;
+			float: left;
+			.box-sizing();
+			background: #fff;
+		}
+		img {
+			float: left;
+		}
+		padding: 20px;
+		font-size: 30px;
+		.box-sizing();
+		background: @lightgrey;
+		p {
+			margin: 3px 0;
+		}
+		.info {
+			.column(8);
+			padding-left: 10px;
+			a {
+				color: #333;
+				text-decoration: none;
+				&:hover {
+					color: @blue;
+				}
+			}
+		}
+		
+	}
+	.cta {
+		width: 80px;
+		float: right;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		border-left: 1px solid #999;
+		li {
+			display: block;
+			clear: both;
+			&:last-child {
+				border-top: 1px solid #999;
+			}
+		}
+		a {
+			display: block;
+			padding: 15px 30px 15px 15px;
+			width: 100%;
+		}
+		img {
+			clear: both;
+			display: block;
+			margin: -13px 0 0 -5px;
+			&.addFavourite {
+				margin-left: 3px;
+			}
+		}
+	}
+}
+
 // Sign-up form
 html.signup-form {
 	background: @blue;
@@ -650,8 +651,8 @@ html.dashboard {
 		.push(0);
 	}
 	.dashboard-gpa {
-		font-size: 0.8em;
-		.column(4);
+		.column(3);
+		.push(0.5);
 		ul {
 			list-style: none;
 			padding: 0;
@@ -662,16 +663,57 @@ html.dashboard {
 		}
 		span {
 			font-weight: 800;
-			display: inline-block;
-			width: 70%;
+			display: block;
+			width: 100%;
+			font-size: 2em;
+		}
+	}
+	.notEligible {
+		text-align: center;
+	}
+	.scholarships {
+		margin: 30px 0;
+		display: none;
+		.scholarship {
+			.column(6);
+			margin-bottom: 20px;
+			height: 130px;
+			font-size: 0.8em;
+			.logo {
+				width: 90px;
+				height: 90px;
+				img {
+					width: 100%;
+				}
+			}
+			.info {
+				font-size: 0.9em;
+			}
+		}
+		.cta {
+			width: 30px;
+			img {
+				width: 35px;
+				margin-left: -12px;
+				&.addFavourite {
+					margin-left: -10px;
+				}
+			}
 		}
 	}
 	@media @mobile {
-		.tabs-module, .dashboard-gpa {
+		.tabs-module {
 			.column(12);
 		}
 		.dashboard-gpa {
-			margin-top: 10px;
+			.column(10);
+			.push(1);
+			margin-top: 15px;
+			text-align: right;
+			span {
+				display: inline;
+				margin-left: 1em;
+			}
 		}
 		table {
 			.assignment {

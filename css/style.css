@@ -281,7 +281,16 @@ html.idea .social li {
   display: inline-block;
   padding: 20px;
 }
-html.idea .scholarships .scholarship {
+html.idea a.cta-signup {
+  margin: 30px 0;
+  padding: 25px 40px;
+  border-radius: 10px;
+  font-size: 40px;
+  text-transform: uppercase;
+  background: #f9ed32;
+  color: #333;
+}
+.scholarships .scholarship {
   margin-bottom: 25px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
   *zoom: 1;
@@ -293,15 +302,15 @@ html.idea .scholarships .scholarship {
   box-sizing: border-box;
   background: #efefef;
 }
-html.idea .scholarships .scholarship:before,
-html.idea .scholarships .scholarship:after {
+.scholarships .scholarship:before,
+.scholarships .scholarship:after {
   content: "";
   display: table;
 }
-html.idea .scholarships .scholarship:after {
+.scholarships .scholarship:after {
   clear: both;
 }
-html.idea .scholarships .scholarship .logo {
+.scholarships .scholarship .logo {
   width: 140px;
   height: 130px;
   padding: 20px 10px;
@@ -312,27 +321,27 @@ html.idea .scholarships .scholarship .logo {
   box-sizing: border-box;
   background: #fff;
 }
-html.idea .scholarships .scholarship img {
+.scholarships .scholarship img {
   float: left;
 }
-html.idea .scholarships .scholarship p {
+.scholarships .scholarship p {
   margin: 3px 0;
 }
-html.idea .scholarships .scholarship .info {
+.scholarships .scholarship .info {
   display: inline;
   float: left;
   width: 64.58333333333334%;
   margin: 0 1.0416666666666665%;
   padding-left: 10px;
 }
-html.idea .scholarships .scholarship .info a {
+.scholarships .scholarship .info a {
   color: #333;
   text-decoration: none;
 }
-html.idea .scholarships .scholarship .info a:hover {
+.scholarships .scholarship .info a:hover {
   color: #0bb1e6;
 }
-html.idea .scholarships .cta {
+.scholarships .cta {
   width: 80px;
   float: right;
   padding: 0;
@@ -340,34 +349,25 @@ html.idea .scholarships .cta {
   list-style: none;
   border-left: 1px solid #999;
 }
-html.idea .scholarships .cta li {
+.scholarships .cta li {
   display: block;
   clear: both;
 }
-html.idea .scholarships .cta li:last-child {
+.scholarships .cta li:last-child {
   border-top: 1px solid #999;
 }
-html.idea .scholarships .cta a {
+.scholarships .cta a {
   display: block;
   padding: 15px 30px 15px 15px;
   width: 100%;
 }
-html.idea .scholarships .cta img {
+.scholarships .cta img {
   clear: both;
   display: block;
   margin: -13px 0 0 -5px;
 }
-html.idea .scholarships .cta img.addFavourite {
+.scholarships .cta img.addFavourite {
   margin-left: 3px;
-}
-html.idea a.cta-signup {
-  margin: 30px 0;
-  padding: 25px 40px;
-  border-radius: 10px;
-  font-size: 40px;
-  text-transform: uppercase;
-  background: #f9ed32;
-  color: #333;
 }
 html.signup-form {
   background: #0bb1e6;
@@ -1011,11 +1011,11 @@ html.dashboard .tabs-module {
   margin-left: 1.0416666666666665%;
 }
 html.dashboard .dashboard-gpa {
-  font-size: 0.8em;
   display: inline;
   float: left;
-  width: 31.25%;
+  width: 22.916666666666664%;
   margin: 0 1.0416666666666665%;
+  margin-left: 5.208333333333332%;
 }
 html.dashboard .dashboard-gpa ul {
   list-style: none;
@@ -1027,19 +1027,65 @@ html.dashboard .dashboard-gpa ul li {
 }
 html.dashboard .dashboard-gpa span {
   font-weight: 800;
-  display: inline-block;
-  width: 70%;
+  display: block;
+  width: 100%;
+  font-size: 2em;
+}
+html.dashboard .notEligible {
+  text-align: center;
+}
+html.dashboard .scholarships {
+  margin: 30px 0;
+  display: none;
+}
+html.dashboard .scholarships .scholarship {
+  display: inline;
+  float: left;
+  width: 47.91666666666667%;
+  margin: 0 1.0416666666666665%;
+  margin-bottom: 20px;
+  height: 130px;
+  font-size: 0.8em;
+}
+html.dashboard .scholarships .scholarship .logo {
+  width: 90px;
+  height: 90px;
+}
+html.dashboard .scholarships .scholarship .logo img {
+  width: 100%;
+}
+html.dashboard .scholarships .scholarship .info {
+  font-size: 0.9em;
+}
+html.dashboard .scholarships .cta {
+  width: 30px;
+}
+html.dashboard .scholarships .cta img {
+  width: 35px;
+  margin-left: -12px;
+}
+html.dashboard .scholarships .cta img.addFavourite {
+  margin-left: -10px;
 }
 @media all and (max-width: 767px) {
-  html.dashboard .tabs-module,
-  html.dashboard .dashboard-gpa {
+  html.dashboard .tabs-module {
     display: inline;
     float: left;
     width: 97.91666666666666%;
     margin: 0 1.0416666666666665%;
   }
   html.dashboard .dashboard-gpa {
-    margin-top: 10px;
+    display: inline;
+    float: left;
+    width: 81.25%;
+    margin: 0 1.0416666666666665%;
+    margin-left: 9.374999999999998%;
+    margin-top: 15px;
+    text-align: right;
+  }
+  html.dashboard .dashboard-gpa span {
+    display: inline;
+    margin-left: 1em;
   }
   html.dashboard table .assignment {
     width: 140px;

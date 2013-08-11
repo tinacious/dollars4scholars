@@ -23,23 +23,35 @@ $(document).ready(function(){
 	  e.preventDefault();
 	});
 
-		// Add course tab
-		$('#modalAddCourse').hide();
-		$('.addCourse').fancybox({
-			maxWidth: 960
-		});
+	// Add course tab
+	$('#modalAddCourse').hide();
+	$('.addCourse').fancybox({
+		maxWidth: 960
+	});
 
-		// Add an Assignment
-		$('.addAssignment').click(function(){
-			var assignmentTable = $(this).siblings('table');
-			assignmentTable.find('tbody').append('<tr><td><input type="text"></td><td><input type="number"></td><td><input type="number"></td><td><input type="text" class="datepicker"></td></tr>');
-			assignmentTable.find('tr:last input:first').focus();
-			$('.datepicker').datepicker();
-			return false;
-		});
+	// Add an Assignment
+	$('.addAssignment').click(function(){
+		var assignmentTable = $(this).siblings('table');
+		assignmentTable.find('tbody').append('<tr><td><input type="text"></td><td><input type="number"></td><td><input type="number"></td><td><input type="text" class="datepicker" id="updateMarks"></td></tr>');
+		assignmentTable.find('tr:last input:first').focus();
+		// $('.datepicker').datepicker();
 
-		// Due date
-		$('.datepicker').datepicker();
+		// Dashboard Assignment Adding
+		$('#updateMarks').datepicker({
+			onClose: function(dateText, inst){
+				$(this).focus();
+				// Hide not eligible
+				$('.notEligible').fadeOut(300);
+				// Show scholarships
+				$('.dashboard-section .scholarships').fadeIn(400);
+				// Update Marks
+			}
+		});
+		return false;
+	});
+
+	// Due date
+	$('.datepicker').datepicker();
 
 	// Scholarship Add to Favourites
 	$('.addFavourite').click(function(){
@@ -51,6 +63,9 @@ $(document).ready(function(){
 	$('.mobile-link').click(function(){
 		$('.banner ul').slideToggle();
 	});
+
+	
+
 
 });
 
