@@ -328,6 +328,7 @@ html.idea a.cta-signup {
   margin: 3px 0;
 }
 .scholarships .scholarship .info {
+  position: relative;
   display: inline;
   float: left;
   width: 64.58333333333334%;
@@ -340,6 +341,11 @@ html.idea a.cta-signup {
 }
 .scholarships .scholarship .info a:hover {
   color: #0bb1e6;
+}
+.scholarships .scholarship .info .warning-icon img {
+  position: absolute;
+  top: 0;
+  right: -6px;
 }
 .scholarships .cta {
   width: 80px;
@@ -514,6 +520,14 @@ label {
 
   height: 0;
 }
+ul.button-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.button-list li {
+  display: inline-block;
+}
 .btn {
   background: #0bb1e6;
   display: inline-block;
@@ -528,6 +542,12 @@ label {
   background: #f9ed32;
   color: #333;
   cursor: pointer;
+}
+.btn.help {
+  background: green;
+}
+.btn.remove {
+  background: crimson;
 }
 .ui-datepicker {
   font-size: 16px;
@@ -1092,4 +1112,13 @@ html.dashboard .scholarships .cta img.addFavourite {
 }
 .hideThis {
   display: none;
+}
+.modal-window {
+  padding: 20px;
+}
+.modal-window h1 {
+  margin-top: 0;
+}
+.modal-window ul {
+  margin-top: 20px;
 }

@@ -127,6 +127,7 @@ html.idea {
 			margin: 3px 0;
 		}
 		.info {
+			position: relative;
 			.column(8);
 			padding-left: 10px;
 			a {
@@ -134,6 +135,13 @@ html.idea {
 				text-decoration: none;
 				&:hover {
 					color: @blue;
+				}
+			}
+			.warning-icon {
+				img {
+					position: absolute;
+					top: 0;
+					right: -6px;
 				}
 			}
 		}
@@ -280,6 +288,14 @@ label {
 }
 
 // UI 
+ul.button-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	li {
+		display: inline-block;
+	}
+}
 .btn {
 	background: @blue;
 	display: inline-block;
@@ -293,6 +309,12 @@ label {
 		background: @yellow;
 		color: #333;
 		cursor: pointer;
+	}
+	&.help {
+		background: green;
+	}
+	&.remove {
+		background: crimson;
 	}
 }
 .ui-datepicker {
@@ -721,6 +743,17 @@ html.dashboard {
 		}
 	}
 }
+
+// Modal Windows
 .hideThis {
 	display: none;
+}
+.modal-window {
+	h1 {
+		margin-top: 0;
+	}
+	padding: 20px;
+	ul {
+		margin-top: 20px;
+	}
 }

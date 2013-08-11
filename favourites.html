@@ -21,7 +21,7 @@
 						<a href="#">Courses</a>
 					</li>
 					<li>
-						<a href="#">Admin</a>
+						<a href="#">Settings</a>
 					</li>
 					<li>
 						<a href="login.html">Logout</a>
@@ -32,11 +32,13 @@
 
 		<div class="container top">
 			<h2>Favourites</h2>
+			<p>
+				Here are your favourited scholarships.
+			</p>
 
 			<div class="dashboard-section">
-				
+				<!-- Scholarships -->
 				<div class="scholarships">
-
 					<div class="scholarship">
 						<div class="logo">
 							<a href="#"><img src="img/tinacious-design-logo.gif"></a>
@@ -66,7 +68,7 @@
 						</ul>
 					</div> <!-- /.scholarship -->
 
-					<div class="scholarship">
+					<div class="scholarship" id="invalidSch">
 						<div class="logo">
 							<a href="#"><img src="img/sch02.png"></a>
 						</div>
@@ -80,6 +82,7 @@
 									9 News and College In Colorado
 								</p>
 							</a>
+							<a class="warning-icon" href="#modalWarning"><img src="img/warning.png" alt="Warning icon"></a>
 						</div>
 						<ul class="cta">
 							<li>
@@ -95,17 +98,60 @@
 						</ul>
 					</div> <!-- /.scholarship -->
 					
-				</div>
+				</div><!-- /.scholarships -->
 
 			</div> <!-- /.dashboard-section -->
-
-
-			<!-- Scholarships -->
-			 <!-- /.scholarships -->
-
-
 			
 		<!-- Inline Modal Windows -->
+		<div id="modalWarning" class="hideThis modal-window">
+			<h1>Ineligible for Scholarship</h1>
+			<p>
+				Uh oh, you have fallen behind and are no longer eligible for this scholarship!
+			</p>
+			<ul class="button-list">
+				<li><a href="#modalHelp" class="btn help">Help</a></li>
+				<li><a href="#" class="btn remove">Remove</a></li>
+			</ul>
+		</div>
+
+		<div id="modalHelp" class="hideThis modal-window">
+			<h1>Achieve</h1>
+			<p>
+				Achieve the following marks in your upcoming assignments to be eligible for this scholarship.
+			</p>
+			<table>
+				<thead>
+					<tr>
+						<th>Assignment</th>
+						<th>Course</th>
+						<th>Grade</th>
+						<th>% of grade</th>
+						<th>Due Date</th>
+					</tr>
+					<tbody>
+						<tr>
+							<td>
+								<input type="text" value="Essay (6 pages)">
+							</td>
+							<td><input type="text" value="Law 102"></td>
+							<td><input type="number" value="95"></td>
+							<td><input type="number" value="10"></td>
+							<td><input type="text" class="datepicker" value="08/06/2013"></td>
+						</tr>
+						<tr>
+							<td><input type="text" value="Final Exam"></td>
+							<td><input type="text" value="Law 102"></td>
+							<td><input type="number" value="90"></td>
+							<td><input type="number" value="15"></td>
+							<td><input type="text" class="datepicker" value="08/06/2013"></td>
+						</tr>
+					</tbody>
+				</thead>
+			</table>
+			<ul class="button-list">
+				<li><a href="#" class="btn remove">Remove</a></li>
+			</ul>
+		</div>
 		
 
 		<script type="text/javascript" src="//use.typekit.net/xcw2vjl.js"></script>

@@ -24,7 +24,6 @@ $(document).ready(function(){
 	});
 
 	// Add course tab
-	$('#modalAddCourse').hide();
 	$('.addCourse').fancybox({
 		maxWidth: 960
 	});
@@ -64,6 +63,18 @@ $(document).ready(function(){
 	// Dashboard Mobile Navigation Menu
 	$('.mobile-link').click(function(){
 		$('.banner ul').slideToggle();
+	});
+
+	// Favourites -- Scholarship Ineligibility
+	$('.warning-icon').fancybox({
+		maxWidth: 960
+	});
+	$('#modalWarning .help').fancybox({
+		maxWidth: 960
+	});
+	$('.button-list .remove').click(function(){
+		$('#invalidSch').hide();
+		parent.$.fancybox.close();
 	});
 
 });
