@@ -1,6 +1,9 @@
 $(document).ready(function(){
 	// Responsive Promo Video
-	$('.video').tinaciousFluidVid();
+	$('.video').tinaciousFluidVid({
+		id: 'zA3nm6vXWOE',
+		type: 'youtube'
+	});
 
 	// CTA action
 	$('.goSignUp').click(function(){

@@ -518,18 +518,26 @@ a.addCourse {
 }
 
 // Promo section
+// .promo {
+// 	//
+// }
 .promo-content {
 	.row();
+	.description {
+		// Video section description
+		.column(5);
+	}
+	.video {
+		.column(7);
+	}
 }
-.promo {
-	background: @lightgrey;
-}
+
+// All sections with description
 .description {
+	// all descriptions
 	.column(7);
 }
-.video {
-	.column(5);
-}
+
 // RWD
 @media @mobile {
 	.description, .video {

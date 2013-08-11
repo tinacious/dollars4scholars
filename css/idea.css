@@ -1199,8 +1199,25 @@ a.addCourse:hover {
 .promo-content:after {
   clear: both;
 }
-.promo {
-  background: #efefef;
+.promo-content .description {
+  display: inline;
+  float: left;
+  width: 39.58333333333333%;
+  margin: 0 1.0416666666666665%;
+  display: inline;
+  float: left;
+  width: 39.58333333333333%;
+  margin: 0 1.0416666666666665%;
+}
+.promo-content .video {
+  display: inline;
+  float: left;
+  width: 56.25%;
+  margin: 0 1.0416666666666665%;
+  display: inline;
+  float: left;
+  width: 56.25%;
+  margin: 0 1.0416666666666665%;
 }
 .description {
   display: inline;
@@ -1210,16 +1227,6 @@ a.addCourse:hover {
   display: inline;
   float: left;
   width: 56.25%;
-  margin: 0 1.0416666666666665%;
-}
-.video {
-  display: inline;
-  float: left;
-  width: 39.58333333333333%;
-  margin: 0 1.0416666666666665%;
-  display: inline;
-  float: left;
-  width: 39.58333333333333%;
   margin: 0 1.0416666666666665%;
 }
 @media all and (max-width: 767px) {
