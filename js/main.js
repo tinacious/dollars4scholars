@@ -76,5 +76,8 @@ $(document).ready(function(){
 		$('#invalidSch').hide();
 		parent.$.fancybox.close();
 	});
+	$('.button-list .ok').click(function(){
+		parent.$.fancybox.close();
+	});
 
 });
