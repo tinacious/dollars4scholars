@@ -34,17 +34,20 @@ $(document).ready(function(){
 		var assignmentTable = $(this).siblings('table');
 		assignmentTable.find('tbody').append('<tr><td><input type="text"></td><td><input type="number"></td><td><input type="number"></td><td><input type="text" class="datepicker" id="updateMarks"></td></tr>');
 		assignmentTable.find('tr:last input:first').focus();
-		// $('.datepicker').datepicker();
 
 		// Dashboard Assignment Adding
 		$('#updateMarks').datepicker({
 			onClose: function(dateText, inst){
 				$(this).focus();
 				// Hide not eligible
-				$('.notEligible').fadeOut(300);
-				// Show scholarships
-				$('.dashboard-section .scholarships').fadeIn(400);
+				$('.notEligible').fadeOut(100).html('You are now eligible for the following scholarships!').fadeIn(1000);
+				
 				// Update Marks
+				$('.cgpa').hide().fadeIn(2000).html('80%');
+				$('.tgpa').hide().fadeIn(2000).html('82%');
+
+				// Show scholarships
+				$('.dashboard-section .scholarships').delay(1300).slideDown(900);
 			}
 		});
 		return false;
@@ -64,8 +67,4 @@ $(document).ready(function(){
 		$('.banner ul').slideToggle();
 	});
 
-	
-
-
 });
-
