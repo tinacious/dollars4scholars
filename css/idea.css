@@ -829,10 +829,6 @@ ul.button-list li {
   color: #333;
   cursor: pointer;
 }
-.btn.help,
-.btn.ok {
-  background: green;
-}
 .btn.remove {
   background: crimson;
 }
@@ -1742,4 +1738,12 @@ html.dashboard .scholarships .cta img.addFavourite {
 }
 .modal-window ul {
   margin-top: 20px;
+}
+.modal-window td.highlight {
+  background: #f9ed32;
+}
+.modal-window td.highlight input {
+  background: #f9ed32;
+  font-weight: 800;
+  color: #333;
 }
