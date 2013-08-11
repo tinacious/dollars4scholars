@@ -762,7 +762,7 @@ label {
 }
 @media all and (max-width: 767px) {
   .top {
-    padding-top: 20px;
+    padding-top: 35px;
   }
 }
 .responsive-video object,
@@ -1456,5 +1456,46 @@ img.appstore {
     float: left;
     width: 97.91666666666666%;
     margin: 0 1.0416666666666665%;
+  }
+}
+html.dashboard .banner {
+  padding: 0;
+}
+html.dashboard .banner .mobile-link {
+  display: none;
+}
+html.dashboard .banner ul {
+  width: 800px;
+  margin-top: 20px;
+}
+html.dashboard .banner ul a {
+  color: #0bb1e6;
+  font-weight: 800;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 15px;
+}
+html.dashboard .banner ul li:last-child a {
+  padding-right: 0;
+}
+@media all and (max-width: 767px) {
+  html.dashboard .banner .mobile-link {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  html.dashboard .banner ul {
+    display: none;
+    width: 100%;
+    font-size: 0.9em;
+    clear: both;
+    text-align: left;
+  }
+  html.dashboard .banner ul li {
+    display: block;
+  }
+  html.dashboard .banner ul a {
+    padding: 8px 15px;
   }
 }

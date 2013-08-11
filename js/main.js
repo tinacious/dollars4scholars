@@ -47,5 +47,10 @@ $(document).ready(function(){
 		return false;
 	});
 
+	// Dashboard Mobile Navigation Menu
+	$('.mobile-link').click(function(){
+		$('.banner ul').slideToggle();
+	});
+
 });
 
