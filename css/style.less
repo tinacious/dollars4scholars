@@ -563,10 +563,12 @@ a.addCourse {
 		.push(1);
 	}
 	.validation-summary-errors {
-		clear: both;
-		list-style: none;
-		padding: 0;
-		margin: 0;
+		ul {
+			clear: both;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
 		li {
 			display: block;
 		}
@@ -574,6 +576,7 @@ a.addCourse {
 	a.register-link {
 		color: @blue;
 		font-weight: 800;
+		text-decoration: none;
 	}
 }
 .count {

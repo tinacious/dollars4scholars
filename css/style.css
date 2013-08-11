@@ -880,7 +880,7 @@ a.addCourse:hover {
   margin: 0 1.0416666666666665%;
   margin-left: 9.374999999999998%;
 }
-.signup .validation-summary-errors {
+.signup .validation-summary-errors ul {
   clear: both;
   list-style: none;
   padding: 0;
@@ -892,6 +892,7 @@ a.addCourse:hover {
 .signup a.register-link {
   color: #0bb1e6;
   font-weight: 800;
+  text-decoration: none;
 }
 .count {
   font-size: 3em;
