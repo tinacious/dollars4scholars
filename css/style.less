@@ -319,7 +319,7 @@ label {
 		a {
 			padding: 5px;
 			background: #CFCFCF;
-			border: 1px solid #CFCFCF;
+			border: 1px solid @lightgrey;
 			border-bottom: 0;
 			color: #000;
 			display: block;
@@ -592,6 +592,7 @@ img.appstore {
 
 // Dashboard
 html.dashboard {
+	// background: @blue;
 	.banner {
 		padding:0;
 		.mobile-link {
@@ -634,6 +635,47 @@ html.dashboard {
 				a {
 					padding: 8px 15px;
 				}
+			}
+		}
+	}
+	.dashboard-section {
+		.row();
+		.table-section {
+			height: 280px;
+		}
+	}
+	.tabs-module {
+		font-size: 0.8em;
+		.column(8);
+		.push(0);
+	}
+	.dashboard-gpa {
+		font-size: 0.8em;
+		.column(4);
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			li {
+				padding: 2px 0;
+			}
+		}
+		span {
+			font-weight: 800;
+			display: inline-block;
+			width: 70%;
+		}
+	}
+	@media @mobile {
+		.tabs-module, .dashboard-gpa {
+			.column(12);
+		}
+		.dashboard-gpa {
+			margin-top: 10px;
+		}
+		table {
+			.assignment {
+				width: 140px;
 			}
 		}
 	}

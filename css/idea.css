@@ -837,7 +837,7 @@ label {
 .tabs-nav ul a {
   padding: 5px;
   background: #CFCFCF;
-  border: 1px solid #CFCFCF;
+  border: 1px solid #efefef;
   border-bottom: 0;
   color: #000;
   display: block;
@@ -1497,5 +1497,108 @@ html.dashboard .banner ul li:last-child a {
   }
   html.dashboard .banner ul a {
     padding: 8px 15px;
+  }
+}
+html.dashboard .dashboard-section {
+  display: block;
+  width: 102.08333333333333%;
+  margin: 0 -1.0416666666666665%;
+  *zoom: 1;
+  *zoom: 1;
+  display: block;
+  width: 102.08333333333333%;
+  margin: 0 -1.0416666666666665%;
+  *zoom: 1;
+  *zoom: 1;
+}
+html.dashboard .dashboard-section:before,
+html.dashboard .dashboard-section:after {
+  content: "";
+  display: table;
+}
+html.dashboard .dashboard-section:after {
+  clear: both;
+}
+html.dashboard .dashboard-section:before,
+html.dashboard .dashboard-section:after {
+  content: "";
+  display: table;
+}
+html.dashboard .dashboard-section:after {
+  clear: both;
+}
+html.dashboard .dashboard-section:before,
+html.dashboard .dashboard-section:after {
+  content: "";
+  display: table;
+}
+html.dashboard .dashboard-section:after {
+  clear: both;
+}
+html.dashboard .dashboard-section:before,
+html.dashboard .dashboard-section:after {
+  content: "";
+  display: table;
+}
+html.dashboard .dashboard-section:after {
+  clear: both;
+}
+html.dashboard .dashboard-section .table-section {
+  height: 280px;
+}
+html.dashboard .tabs-module {
+  font-size: 0.8em;
+  display: inline;
+  float: left;
+  width: 64.58333333333334%;
+  margin: 0 1.0416666666666665%;
+  display: inline;
+  float: left;
+  width: 64.58333333333334%;
+  margin: 0 1.0416666666666665%;
+  margin-left: 1.0416666666666665%;
+  margin-left: 1.0416666666666665%;
+}
+html.dashboard .dashboard-gpa {
+  font-size: 0.8em;
+  display: inline;
+  float: left;
+  width: 31.25%;
+  margin: 0 1.0416666666666665%;
+  display: inline;
+  float: left;
+  width: 31.25%;
+  margin: 0 1.0416666666666665%;
+}
+html.dashboard .dashboard-gpa ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+html.dashboard .dashboard-gpa ul li {
+  padding: 2px 0;
+}
+html.dashboard .dashboard-gpa span {
+  font-weight: 800;
+  display: inline-block;
+  width: 70%;
+}
+@media all and (max-width: 767px) {
+  html.dashboard .tabs-module,
+  html.dashboard .dashboard-gpa {
+    display: inline;
+    float: left;
+    width: 97.91666666666666%;
+    margin: 0 1.0416666666666665%;
+    display: inline;
+    float: left;
+    width: 97.91666666666666%;
+    margin: 0 1.0416666666666665%;
+  }
+  html.dashboard .dashboard-gpa {
+    margin-top: 10px;
+  }
+  html.dashboard table .assignment {
+    width: 140px;
   }
 }
